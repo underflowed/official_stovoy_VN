@@ -2,7 +2,7 @@
 
 being made with the use of RenPy VN tools
 please build and run RenPy from
-[GitHub](https://github.com/renpy/renpy)
+[here](https://github.com/renpy/renpy)
 
-Artists, and any other contributers welcome at our official discord-
+Artists, and any other contributors welcome at our official discord-
 https://discord.gg/SaUDeMV
