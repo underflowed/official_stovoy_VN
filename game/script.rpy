@@ -6,7 +6,8 @@ define s = Character("Stovoy")
 define e = Character("evades.IO")
 define t = Character("Twitch Chat")
 define n = Character("Narrator")
-define sum = Character("Summerrocks")
+define sumer = Character("Summerrocks")
+define m = Character("Maavrik")
 
 
 # The game starts here.
@@ -36,8 +37,39 @@ label start:
 
     #Stovoy speaking to twitch chat
     s "h-hey guys! can you hear me? I'm refactoring evades.io to get the engine ready to accept new ma-"
-    n "Summerrocks joins the stream"
-    sum "hello my sweet dev boi"
+    n "Summerrocks joins the twitch chat."
+    sumer "hello my sweet dev boi"
+    sumer "i require knowledge of programming, feed me almighty developer"
+    s   "well what do you want to know..."
+    sumer "everything"
+    s   "Whats up with this kid...?"
+    m   "POGGERS is that a fucking Hyper 212 Evo"
+    s   "Well not like my regular viewers are anymore mentally sane"
+    menu:
+        "Should I actually develop evades.io":
+            jump choice1_dev
+
+        "I should talk to the dude my sub counts are low":
+            jump choice2_onlychoice
+
+    label choice1_dev:
+        $menu_flag = False
+        s "well, it never works out even when i tell myself that"
+
+    label choice2_onlychoice:
+        $menu_flag = True
+        s "ugh... fine"
+        jump choice1_done
+
+    label choice1_done:
+        s "alright well just... sit by and watch me code i guess..."
+
+
+
+
+
+
+
 
 
 
