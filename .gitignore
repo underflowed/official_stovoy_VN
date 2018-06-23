@@ -1,4 +1,7 @@
-
-*.save
-*.save
+#ignore saves folder
+game/saves/
+#ignore .rpyc files
+*.rpyc
+#ignore logs and tracebacks
+traceback.txt
 log.txt
