@@ -3,11 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define s = Character("Stovoy")
-define e = Character("evades.IO")
+define e = Character("Evades.io")
 define t = Character("Twitch Chat")
-define n = Character("Narrator")
 define sumer = Character("Summerrocks")
-define m = Character("Maavrik")
+define m = Character("Maavrik", color="#FF69B4")
 
 
 # The game starts here.
@@ -27,71 +26,39 @@ label start:
     show worried
 
     # Narrator introducing Stovoy after work
-    n "After coming home from his overly well paying silicone valley tech start up job, Stovoy, began streaming."
-    n "All 10 of his loyal viewers logged on to watch him attempt to develop evades.io."
-    n "However, all 10 of his loyal followers, also know this is futile."
-    n "We do as much coding as we do brazilian lap dancing."
-    n "Which to clarify is none."
+    "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
+    "All 10 of his loyal viewers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
+    "However, his 10 regulars and Stovoy himself, know that this is futile."
+    "We do as much coding as we do Brazilian Lap Dancing."
+    "Which, to clarify, is none."
 
     scene twitch
 
     #Stovoy speaking to twitch chat
-    s "h-hey guys! can you hear me? I'm refactoring evades.io to get the engine ready to accept new ma-"
-    n "Summerrocks joins the twitch chat."
+    s "H-hey guys! Can you hear me? I'm refactoring Evades.io to get the engine ready to accept new ma-"
+    "Summerrocks joins the twitch chat."
     sumer "hello my sweet dev boi"
     sumer "i require knowledge of programming, feed me almighty developer"
-    s   "well what do you want to know..."
+    s   "Well, what do you wanna know..."
     sumer "everything"
-    s   "Whats up with this kid...?"
-    m   "POGGERS is that a fucking Hyper 212 Evo"
-    s   "Well not like my regular viewers are anymore mentally sane"
+    s   "What's with this kid...?"
+    m   "POGGERS is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
+    m   "i have fucking x-ray vision and i can see into your case, nobody actually grab screenshots of when we actually saw him open his pc on stream also fuck this vn"
+    s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
-        "Should I actually develop evades.io":
-            jump choice1_dev
+        "What should I do?"
 
-        "I should talk to the dude my sub counts are low":
-            jump choice2_onlychoice
+        "actually develop evades.io":
+            $tried_dev = True
+            "Well, it never works out, even when I tell myself to do that..."
 
-    label choice1_dev:
-        $menu_flag = False
-        s "well, it never works out even when i tell myself that"
+        "I should talk to these idiots, my sub counts are low":
+            "Ugh... fine..."
 
-    label choice2_onlychoice:
-        $menu_flag = True
-        s "ugh... fine"
-        jump choice1_done
-
-    label choice1_done:
-        s "alright well just... sit by and watch me code i guess..."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+label after_menu:
+    s   "Alright, well, just... Sit and watch me code... I guess..."
+    "Stovoy valiantly attempts to make progress on evades.io, but as always, it was never meant to be..."
+    m   "hey check out this worthless youtube video"
 
 
 
