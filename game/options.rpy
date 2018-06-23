@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("official_stovoy_VN")
+define config.name = _("The Official Stovoy VN (The One and Only)")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,15 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.69 alpha"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""This game is about Stovoy.  He is a programmer.
+
+He programs Evades.io live, on Twitch.  Except, he doesn't really get to program anything.
 """)
 
 
@@ -47,7 +49,7 @@ define build.name = "official_stovoy_VN"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
