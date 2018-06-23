@@ -1,5 +1,7 @@
 #ignore saves folder
 game/saves/
+#ignore cache folder
+game/cache/
 #ignore .rpyc files
 *.rpyc
 #ignore logs and tracebacks
