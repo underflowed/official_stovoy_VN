@@ -17,13 +17,13 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene placeholder
+    scene bg room #THIS IS A PLACEHOLDER IMAGE PLS FIX
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show worried
+    show s worried
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
@@ -32,7 +32,7 @@ label start:
     "We do as much coding as we do Brazilian Lap Dancing."
     "Which, to clarify, is none."
 
-    scene twitch
+    scene bg twitch
 
     #Stovoy speaking to twitch chat
     s "H-hey guys! Can you hear me? I'm refactoring Evades.io to get the engine ready to accept new ma-"
@@ -57,8 +57,8 @@ label start:
 
 label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
-    "Stovoy valiantly attempts to make progress on evades.io, but as always, it was never meant to be..."
-    m   "hey check out this worthless youtube video"
+    "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
+    m   "hey check out this worthless youtube video" #add a video here lmao idiot
 
 
 
