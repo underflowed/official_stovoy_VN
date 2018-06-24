@@ -7,3 +7,4 @@ game/cache/
 #ignore logs and tracebacks
 traceback.txt
 log.txt
+errors.txt
