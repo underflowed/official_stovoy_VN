@@ -7,7 +7,7 @@ define e = Character("Evades.io")
 define t = Character("Twitch Chat")
 define sumer = Character("Summerrocks", color="#EAB8AC")
 define m = Character("Maavrik", color="#FF69B4")
-
+define black = "#000"
 
 # The game starts here.
 
@@ -17,7 +17,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room #THIS IS A PLACEHOLDER IMAGE PLS FIX
+    scene bg room with fade#THIS IS A PLACEHOLDER IMAGE PLS FIX
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -27,8 +27,8 @@ label start:
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
-    "Day in and day out (Except for Mondays and Wednesdays) he would force himself in to having to come back to these stupid idiots, that halt any notion of the word \"productivity\""
     "All 10 of his loyal followers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
+    "Day in and day out (Except for Mondays and Wednesdays), he would force himself into having to come back to these stupid idiots, thut halting any notion of the word \"productivity\"."
     "However, his 10 regulars and Stovoy himself, know that this is futile."
     "We do as much coding as we do Brazilian Lap Dancing."
     "Which, to clarify, is none."
@@ -60,25 +60,32 @@ label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
     m   "hey check out this worthless youtube video" #add a video here lmao idiot
-    m   "that was a worthwhile use of your time wasn't it?"
+    m   "that was a worthwhile use of your time wasn't it? :^)"
     s   "Why the actual fuck am I putting up with this."
-    s   "Even after evades.io development is finished I can only make a copy of Snake using so many frameworks, what am I even going to do..."
+    s   "Even after Evades.io development is finished I can only make a copy of Snake using so many frameworks, what am I even going to do..."
 
-    menu:
-        "I've got to figure something out..."
+    menu taco_choice:
+        s "I've got to figure something out..."
 
-        "Drop this hobby and start mexican taco truck business":
+        "Drop this hobby and get into the Mexican Taco Truck Business":
+            s "You know what? Fuck you guys I'm going into the Taco Trade"
             jump taco_truck
 
         "Abide by the punishment that has been placed upon me":
-            jump end_game
+            s "Ugh... Another day spent alive..."
+            jump bad_end
+
+        "Derail this fucking game so I can program more maps for Evades.io" if tried_dev:
+            jump rpymeme
 
 label taco_truck:
-    s  "testing"
+    scene bg tacotruck
+    s  "taco truck infinite loop by summer what a great dev he is" #:^)
     jump taco_truck
 
-label end_game:
-    s "Ugh... another day spent alive"
+label bad_end:
+    scene black with fade
+    "You suck.  You got the bad ending." #make bad ending better? idk
     return
 
 
