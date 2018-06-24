@@ -23,7 +23,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show s worried
+    show s worried at truecenter #for proper cropping later
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
