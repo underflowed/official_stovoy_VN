@@ -7,7 +7,7 @@ define t = Character("Twitch Chat")
 define sumer = Character("Summerrocks", color="#EAB8AC")
 define m = Character("Maavrik", color="#FF69B4")
 # Declare variables
-$tried_dev = None
+define tried_dev = None
 # Declare misc.
 define black = "#000"
 
