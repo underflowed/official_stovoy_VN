@@ -5,7 +5,7 @@
 define s = Character("Stovoy")
 define e = Character("Evades.io")
 define t = Character("Twitch Chat")
-define sumer = Character("Summerrocks")
+define sumer = Character("Summerrocks", color="#EAB8AC")
 define m = Character("Maavrik", color="#FF69B4")
 
 
@@ -27,7 +27,8 @@ label start:
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
-    "All 10 of his loyal viewers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
+    "Day in and day out (Except for Mondays and Wednesdays) he would force himself in to having to come back to these stupid idiots, that halt any notion of the word \"productivity\""
+    "All 10 of his loyal followers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
     "However, his 10 regulars and Stovoy himself, know that this is futile."
     "We do as much coding as we do Brazilian Lap Dancing."
     "Which, to clarify, is none."
@@ -43,7 +44,7 @@ label start:
     sumer "everything"
     s   "What's with this kid...?"
     m   "POGGERS is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
-    m   "i have fucking x-ray vision and i can see into your case, nobody actually grab screenshots of when we actually saw him open his pc on stream also fuck this vn"
+    m   "i have fucking x-ray vision and i can see into your case, nobody actually grabbed screenshots of when we actually saw him open his pc on stream also fuck this vn"
     s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
         "What should I do?"
@@ -59,6 +60,29 @@ label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
     m   "hey check out this worthless youtube video" #add a video here lmao idiot
+    m   "that was a worthwhile use of your time wasn't it?"
+    s   "Why the actual fuck am I putting up with this."
+    s   "Even after evades.io development is finished I can only make a copy of Snake using so many frameworks, what am I even going to do..."
+
+    menu:
+        "I've got to figure something out..."
+
+        "Drop this hobby and start mexican taco truck business":
+            jump taco_truck
+
+        "Abide by the punishment that has been placed upon me":
+            jump end_game
+
+label taco_truck:
+    s  "testing"
+    jump taco_truck
+
+label end_game:
+    s "Ugh... another day spent alive"
+    return
+
+
+
 
 
 
