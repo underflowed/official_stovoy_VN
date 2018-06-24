@@ -61,7 +61,10 @@ label start:
 label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
-    m   "hey check out this worthless youtube video" #add a video here lmao idiot
+    m   "hey check out this worthless youtube video"
+    #python:
+    #    import webbrowser
+    #    webbrowser.open(insert link here)
     m   "that was a worthwhile use of your time wasn't it? :^)"
     s   "Why the actual fuck am I putting up with this."
     s   "Even after Evades.io development is finished I can only make a copy of Snake using so many frameworks, what am I even going to do..."
