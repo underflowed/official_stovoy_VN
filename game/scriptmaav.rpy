@@ -42,5 +42,5 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
 
     #Good Developer ending
     scene black with fade
-    "Good work, you got the Good Developer ending." #improve this ending? idk :^)
+    "Good work, you got the Good Developer ending." #improve this ending? idk :^) #sorry this is unimprovable -summer
     return

@@ -40,11 +40,16 @@ label start:
     #Stovoy speaking to twitch chat
     s "H-hey guys! Can you hear me? I'm refactoring Evades.io to get the engine ready to accept new ma-"
     "Summerrocks joins the twitch chat."
+
+    show sumer gay
+
     sumer "hello my sweet dev boi"
     sumer "i require knowledge of programming, feed me almighty developer"
     s   "Well, what do you wanna know..."
     sumer "everything"
     s   "What's with this kid...?"
+
+    hide sumer gay
 
     show m kukuru at truecenter
 
