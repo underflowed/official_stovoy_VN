@@ -62,22 +62,25 @@ label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
     m   "hey check out this worthless youtube video"
-    #python:
-    #    import webbrowser
-    #    webbrowser.open(insert link here)
+    python: #this should be replaced with something better, probably download the videos and store locally
+        from webbrowser import open
+        from random import choice as rand #choice is already a renpy function
+        url = "https://www.youtube.com/watch?v=" #get beginning of YouTube URL
+        vids = ["Vlnh0KLVJJ0", "0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
+        open(url + rand(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time wasn't it? :^)"
     s   "Why the actual fuck am I putting up with this."
-    s   "Even after Evades.io development is finished I can only make a copy of Snake using so many frameworks, what am I even going to do..."
+    s   "Even after Evades.io development is finished, I can only make a copy of Snake using so many frameworks, what am I even gonna do..."
 
     menu taco_choice:
         s "I've got to figure something out..."
 
         "Drop this hobby and get into the Mexican Taco Truck Business":
-            s "You know what? Fuck you guys I'm going into the Taco Trade"
+            s "You know what? Fuck Snake and fuck you guys, I'm going into the Taco Trade"
             jump taco_truck
 
         "Abide by the punishment that has been placed upon me":
-            s "Ugh... Another day spent alive..."
+            s "Ugh... Time to make Snake in HTML5 Canvas..."
             jump bad_end
 
         "Derail this fucking game so I can program more maps for Evades.io" if tried_dev:
@@ -90,7 +93,7 @@ label taco_truck:
 
 label bad_end:
     scene black with fade
-    "You suck.  You got the bad ending." #make bad ending better? idk :^)
+    "You suck.  You got the Bad Ending." #make bad ending better? idk :^)
     return
 
 
