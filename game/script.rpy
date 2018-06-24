@@ -1,12 +1,14 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# Declare characters
 define s = Character("Stovoy")
 define e = Character("Evades.io")
 define t = Character("Twitch Chat")
 define sumer = Character("Summerrocks", color="#EAB8AC")
 define m = Character("Maavrik", color="#FF69B4")
+# Declare variables
+$tried_dev = None
+# Declare misc.
 define black = "#000"
 
 # The game starts here.
@@ -17,7 +19,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room with fade#THIS IS A PLACEHOLDER IMAGE PLS FIX
+    scene bg room with fade #THIS IS A PLACEHOLDER IMAGE PLS FIX
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -85,7 +87,7 @@ label taco_truck:
 
 label bad_end:
     scene black with fade
-    "You suck.  You got the bad ending." #make bad ending better? idk
+    "You suck.  You got the bad ending." #make bad ending better? idk :^)
     return
 
 

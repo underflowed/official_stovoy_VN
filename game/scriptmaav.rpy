@@ -1,7 +1,7 @@
 define rpypos = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5)
 define rpy = Character("Ren'Py Logo", color="#FF7F7F")
 
-label rpymeme:
+label rpymeme: #selectable by choosing to actually develop Evades.io
     scene bg room with fade
     show rpy at rpypos with dissolve
     rpy "What the hell is this!?"
@@ -31,9 +31,9 @@ label rpymeme:
     stop sound
     scene bg room
     show m kukuru at truecenter
-    m   "*insert some moral about murder here idk lol :^) *"
+    m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to developing Evades.io!"
 
     #get back to main game and remove this choice
-    scene bg twitch
-    $tried_dev = None
-    jump taco_choice
+    scene black with fade
+    "Good work, you got the Good Developer ending." #improve this ending? idk :^)
+    return
