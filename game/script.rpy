@@ -45,8 +45,14 @@ label start:
     s   "Well, what do you wanna know..."
     sumer "everything"
     s   "What's with this kid...?"
+
+    show m kukuru at truecenter
+
     m   "POGGERS is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
     m   "i have fucking x-ray vision and i can see into your case, nobody actually grabbed screenshots of when we actually saw him open his pc on stream also fuck this vn"
+
+    hide m kukuru
+
     s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
         "What should I do?"
@@ -61,6 +67,9 @@ label start:
 label after_menu:
     s   "Alright, well, just... Sit and watch me code... I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
+
+    show m kukuru at truecenter
+
     m   "hey check out this worthless youtube video"
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
@@ -69,6 +78,9 @@ label after_menu:
         vids = ["Vlnh0KLVJJ0", "0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
         open(url + rand(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time wasn't it? :^)"
+
+    hide m kukuru
+
     s   "Why the actual fuck am I putting up with this."
     s   "Even after Evades.io development is finished, I can only make a copy of Snake using so many frameworks, what am I even gonna do..."
 
