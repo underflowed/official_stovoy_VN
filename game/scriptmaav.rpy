@@ -41,6 +41,8 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"
 
     #Good Developer ending
+    #probably needs music, along with the rest of this game
     scene black with fade
-    "Good work, you got the Good Developer ending." #improve this ending? idk :^) #sorry this is unimprovable -summer
+    "And with that, Stovoy finished refactoring Evades.io successfully.{p}Stovoy felt the satisfaction of actually completing something he set out to do, and lived life happily ever after."
+    "{b}Good work, you got the Good Developer ending.{/b}"
     return
