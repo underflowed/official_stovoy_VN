@@ -1,13 +1,14 @@
 ﻿# The script of the game goes in this file.
 
 # Declare characters
-define s = Character("Stovoy")
+define s = Character("Stovoy", color="#1E90FF")
 define e = Character("Evades.io")
 define t = Character("Twitch Chat")
 define sumer = Character("Summerrocks", color="#EAB8AC")
 define m = Character("Maavrik", color="#FF69B4")
+define h = Character("Hatkii", color="#E961A5")
 # Declare variables
-define tried_dev = None
+define tried_dev = None #this technically isn't needed anymore
 # Declare misc.
 define black = "#000"
 
@@ -34,39 +35,37 @@ label start:
     "However, his 10 regulars and Stovoy himself, know that this is futile."
     "We do as much coding as we do Brazilian Lap Dancing."
     "Which, to clarify, is none."
+    # add in this line before transition? "Let us join Stovoy now, as he begins his stream on Twitch."
 
-    scene bg twitch
+    scene bg twitch with dissolve
 
     #Stovoy speaking to twitch chat
     s "H-hey guys! Can you hear me? I'm refactoring Evades.io to get the engine ready to accept new ma-"
-    "Summerrocks joins the twitch chat."
+    "Summerrocks joins the Twitch chat."
 
-    show sumer gay
-
+    show sumer gay at truecenter
     sumer "hello my sweet dev boi"
     sumer "i require knowledge of programming, feed me almighty developer"
     s   "Well, what do you wanna know..."
     sumer "everything"
     s   "What's with this kid...?"
-
     hide sumer gay
 
     show m kukuru at truecenter
-
     m   "POGGERS is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
-    m   "i have fucking x-ray vision and i can see into your case, nobody actually grabbed screenshots of when we actually saw him open his pc on stream also fuck this vn"
-
+    m   "i have fucking x-ray vision and i can see into your case, nobody retroactively grab any screenshots of when we actually saw him open his pc on stream also fuck this vn"
     hide m kukuru
 
     s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
         "What should I do?"
 
-        "actually develop evades.io":
+        "Actually develop Evades.io":
             $tried_dev = True
             "Well, it never works out, even when I tell myself to do that..."
 
         "I should talk to these idiots, my sub counts are low":
+            $tried_dev = False
             "Ugh... fine..."
 
 label after_menu:
@@ -74,7 +73,6 @@ label after_menu:
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
 
     show m kukuru at truecenter
-
     m   "hey check out this worthless youtube video"
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
@@ -82,42 +80,44 @@ label after_menu:
         url = "https://www.youtube.com/watch?v=" #get beginning of YouTube URL
         vids = ["Vlnh0KLVJJ0", "0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
         open(url + rand(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
-    m   "that was a worthwhile use of your time wasn't it? :^)"
-
+    m   "that was a worthwhile use of your time, wasn't it? :^)"
     hide m kukuru
 
     s   "Why the actual fuck am I putting up with this."
+    "Countless hours go on, with little work on Evades.io and plenty of worthless YouTube videos, and a plethora of other distractions."
+    "Finally, Stovoy was feeling his fatigue that night, and began to wind down." #should we add more useless banter before the story branches?
     s   "Even after Evades.io development is finished, I can only make a copy of Snake using so many frameworks, what am I even gonna do..."
 
-    menu taco_choice:
+    menu:
         s "I've got to figure something out..."
 
         "Drop this hobby and get into the Mexican Taco Truck Business":
-            s "You know what? Fuck Snake and fuck you guys, I'm going into the Taco Trade"
-            jump taco_truck
+            s "You know what? Fuck Snake and fuck you guys, I'm going into the Taco Trade."
+            scene black with fade
+            "And thus, Stovoy ended the stream, and instantly bought a Taco Truck with the infinite money he got by suing the people who made his parachute that failed when he went skydiving, with the settlement money he was awarded."
+            jump taco_truck #scripttaco.rpy
 
         "Abide by the punishment that has been placed upon me":
-            s "Ugh... Time to make Snake in HTML5 Canvas..."
-            jump bad_end
+            s "Ugh... Time to make Snake in LOLCODE..." #tfw he did this
+            jump bad_end #bottom of this file
 
-        "Derail this fucking game so I can program more maps for Evades.io" if tried_dev:
+        "Fuck everything and go to sleep":
+            s "Alright guys, today was a good stream, pretty long, but I'm gonna head off for today, hope to see you next stream!"
+            scene black with fade
+            if tried_dev is True:
+                "Stovoy enjoyed a good sleep that night, knowing that despite his valiant efforts, he still attempted to develop Evades.io.{p}Inside, he was still a good person."
+            else: #if someone somehow skips changing my var from None, they're automatically bad people :^)
+                "Stovoy was restless that night, as he couldn't shake the fact that he was slowly becoming a sellout Twitch shill.{p}Inside, he knew he was a terrible person."
+            scene black with fade
+            jump hatstream #scriptwow.rpy
+
+        "Derail this fucking game so I can program more maps for Evades.io" if tried_dev is True:
             jump rpymeme
-
-label taco_truck:
-    scene bg tacotruck
-    s  "taco truck infinite loop by summer what a great dev he is" #:^)
-    jump taco_truck
 
 label bad_end:
     scene black with fade
-    "You suck.  You got the Bad Ending." #make bad ending better? idk :^)
+    "{b}You suck.  You got the Bad Ending.{/b}" #make bad ending better? idk :^)
     return
 
-
-
-
-
-
     # This ends the game.
-
     return
