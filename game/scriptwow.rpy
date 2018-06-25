@@ -1,8 +1,15 @@
 label hatstream:
-    scene bg hat wow with fade
-    "Hatkii begins the next day bright and early, by downloading the client of a vanilla World of Warcraft private server onto his PC."
+    scene bg hat room with fade
+
+    show hatki normal  #place holder for stuff plan on just putting normal looking sprite for him here
     h "gee i sure am gay" #add more stuff lol
-    jump hatstream
+    h "you know i cant stop thinking about that one npc that salutes back in vanilla wow."
+    h "fuck it i just feel like playing vanilla wow now."
+    "Hatkii begins the day by downloading the client of a vanilla World of Warcraft private server onto his PC."
+    show hatki happy
+    h "woah... i should stream this..."
+
+
 
 
 label wowdl: #later script for this path
