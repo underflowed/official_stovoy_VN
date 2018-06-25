@@ -1,32 +1,22 @@
-﻿# The script of the game goes in this file.
-
 # Declare characters
-define s = Character("Stovoy", color="#1E90FF")
-define e = Character("Evades.io")
-define t = Character("Twitch Chat")
-define sumer = Character("Summerrocks", color="#EAB8AC")
-define m = Character("Maavrik", color="#FF69B4")
-define h = Character("Hatkii", color="#E961A5")
+define s = Character("Stovoy", color="#1E90FF", image="s")
+define e = Character("Evades.io") #is this character necessary
+define t = Character("Twitch Chat") #is this character necessary
+define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
+define m = Character("Maavrik", color="#FF69B4", image="m")
+define h = Character("Hatkii", color="#E961A5", image="h")
 # Declare variables
 define tried_dev = None #this technically isn't needed anymore
+# Redefine left/right pos for our assets, use truecenter for center
+define left = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5)
+define right = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5)
 # Declare misc.
 define black = "#000"
 
-# The game starts here.
-
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg room with fade #THIS IS A PLACEHOLDER IMAGE PLS FIX
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show s worried at truecenter #for proper cropping later
+    show s worried at truecenter
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
@@ -35,7 +25,7 @@ label start:
     "However, his 10 regulars and Stovoy himself, know that this is futile."
     "We do as much coding as we do Brazilian Lap Dancing."
     "Which, to clarify, is none."
-    # add in this line before transition? "Let us join Stovoy now, as he begins his stream on Twitch."
+    "Let us join Stovoy now, as he begins his stream on Twitch."
 
     scene bg twitch with dissolve
 
@@ -98,7 +88,7 @@ label after_menu:
             jump taco_truck #scripttaco.rpy
 
         "Abide by the punishment that has been placed upon me":
-            s "Ugh... Time to make Snake in LOLCODE..." #tfw he did this
+            s "Ugh... Time to make Snake in LOLCODE..." #mfw he did this
             jump bad_end #bottom of this file
 
         "Fuck everything and go to sleep":
@@ -106,17 +96,17 @@ label after_menu:
             scene black with fade
             if tried_dev is True:
                 "Stovoy enjoyed a good sleep that night, knowing that despite his valiant efforts, he still attempted to develop Evades.io.{p}Inside, he was still a good person."
-            else: #if someone somehow skips changing my var from None, they're automatically bad people :^)
+            else:
                 "Stovoy was restless that night, as he couldn't shake the fact that he was slowly becoming a sellout Twitch shill.{p}Inside, he knew he was a terrible person."
             scene black with fade
             jump hatstream #scriptwow.rpy
 
         "Derail this fucking game so I can program more maps for Evades.io" if tried_dev is True:
-            jump rpymeme
+            jump rpymeme #scriptmaav.rpy
 
 label bad_end:
     scene black with fade
-    "{b}You suck.  You got the Bad Ending.{/b}" #make bad ending better? idk :^)
+    "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/swaggy/LOLCODE-Snake}sick repo out of it!{/a}"
     return
 
     # This ends the game.
