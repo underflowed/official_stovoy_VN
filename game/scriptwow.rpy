@@ -17,7 +17,7 @@ label hatstream:
     s "why would i ever want to do anything with you"
     hide hatki normal
     show hatki normal at left:
-        zoom 2.0
+        zoom 2.0 # zoom 1.5 maybe better for sprite we pick? not sure
     h "... i mean your stream's dead anyways."
     hide hatki normal
     hide stovoy_angry
