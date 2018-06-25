@@ -41,7 +41,7 @@ label hatqbt:
     h "no i guess not"
     s scheming "Alright go download μTorrent"
     "Maavrik finally wakes up after having fallen asleep earlier, due to watching a really boring game being played on stream."
-    show image(im.Flip("m kukuru.png", horizontal=True)) at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s #get better layering/positioning lmao
+    show image(im.Flip("m kukuru.png", horizontal=True)) as m at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s #get better layering/positioning lmao
     m "wtf? don't tell him to download a virus smh go get qbittorrent"
     s "Yeah, Maavrik's right go get qBitTorrent. hehehe"
     m "why are you messing with hatkii smh"
@@ -50,10 +50,12 @@ label hatqbt:
     "And so, Stovoy and Maavrik pranked Hatkii for a good hour, which included hopping onto voice chat with him, and making fun of him while watching him struggle to operate qBitTorrent."
     m "we should've told him to use deluge :^)"
     s "And you call me cruel?"
-    m kukukinu "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\Users\Public\Documents"
+    show image(im.Flip("m kukukinu.png", horizontal=True)) as mk at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s
+    m kukukinu "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\\Users\\Public\\Documents"
     h scared "WHAT? WHAT AM I DOING WRONG?"
     "Hatkii cancels the extraction."
     s "Actually, that wasn't exactly a bad location to install to or anything, it's just weird."
+    hide mk
     m "they probably did that to avoid permission errors lol"
     h normal "well fuck you maavrik i'm going to restart installing now"
     h "wait it has to re-extract?"
@@ -64,7 +66,6 @@ label hatqbt:
 label wowstream:
     "Finally, after Hatkii spent close to 2 hours installing, while Stovoy spent closer to 15 minutes, Stovoy began streaming WoW."
     scene bg wow
-    show s normal
     s "this scene under development xd" #ill add more later i have things to do
 
 
