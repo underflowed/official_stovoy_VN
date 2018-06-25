@@ -6,8 +6,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     scene bg room with fade
     show rpy at rpypos with dissolve
     rpy "What the hell is this!?"
-    show m kukuru at mpos with dissolve:
-        zoom 0.5
+    show m kukuru at mpos with dissolve
     m   "a visual novel? :^)"
     rpy "You call this a visual novel?  This is an abomination of the fantastic Ren'Py engine!"
     m   "is that an issue? :^)"
@@ -15,8 +14,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     m   "Well...  We can't have that now, can we..."
     rpy "..."
     m   "..."
-    show m kukugun at Position(xpos=0.25, xanchor=0.0, ypos=0.5, yanchor=0.5):
-        zoom 1.0
+    show m kukugun at Position(xpos=0.25, xanchor=0.0, ypos=0.5, yanchor=0.5)
     m   "u die now"
     show image(im.Grayscale("rpy.png")) as rpy at rpypos
     rpy "shit"
@@ -34,8 +32,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     scene bg room
     show m kukuru at truecenter
     m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to developing Evades.io!"
-    show m kukuru at mpos:
-        zoom 0.5
+    show m kukuru at mpos
     show s normal at rpypos
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"
 
