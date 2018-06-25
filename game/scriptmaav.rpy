@@ -25,8 +25,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     scene black with Fade(8.5, 0.0, 0.0)
 
     play sound "gunshot.ogg"
-    "Maavrik mercilessly murders that stupid Ren'Py logo before she could possibly shittalk this VN any longer."
-    "that was a joke i think the ren'py logo is very cute"
+    "Maavrik mercilessly murders that stupid Ren'Py logo before she could possibly shittalk this VN any longer.{p}(that was a joke i think the ren'py logo is very cute)"
     play sound "Wilhelm_Scream.ogg"
     rpy "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
@@ -37,7 +36,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to developing Evades.io!"
     show m kukuru at mpos:
         zoom 0.5
-    show s professional at rpypos
+    show s normal at rpypos
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"
 
     #Good Developer ending
