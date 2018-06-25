@@ -8,3 +8,4 @@ game/cache/
 traceback.txt
 log.txt
 errors.txt
+*.bak
