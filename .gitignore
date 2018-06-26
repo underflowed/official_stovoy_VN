@@ -8,4 +8,6 @@ game/cache/
 traceback.txt
 log.txt
 errors.txt
+files.txt
 *.bak
+scriptmaavdev.rpy
