@@ -6,7 +6,7 @@ define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
 define m = Character("Maavrik", color="#FF69B4", image="m")
 define h = Character("Hatkii", color="#E961A5", image="h")
 # Declare variables
-define tried_dev = None #this technically isn't needed anymore
+default tried_dev = None
 # Redefine left/right pos for our assets, use truecenter for center
 define left = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5)
 define right = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5)
