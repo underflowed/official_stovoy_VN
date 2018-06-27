@@ -3,23 +3,20 @@ label taco_truck:
     show s worried at truecenter
 
     s "..."
-    s "well what the fuck do i do now"
+    s "Well, what the fuck do I do now?"
+
     show s worried at left
     show m kukuru at right
-    s "what the fuck are you doing here"
+
+    s "What the fuck are you doing here."
     m "ill be fucking honest with you i just want some tacos"
-    show m kukugun at right:
-        zoom 1.0
-    show s angry at left
-
-    m "also get the fuck back to streaming"
-    s "dude fuck that shit if i have to make snake"
-    s "one {p} more {p} time"
-    s "i will commit sepuku."
+    m kukugun "also get the fuck back to streaming"
+    s angry "Dude, fuck that shit. If I have to make snake..."
+    s "One...{w} More...{w} Time..."
+    s "I will commit seppuku."
     m "..."
-    #IMPLEMENT SNAKE HERE IN THE FUTURE CANT FIND ANY RENPY CODE SO I MIGHT HAvE TO PROGRAM IT
 
+    #IMPLEMENT SNAKE HERE IN THE FUTURE CANT FIND ANY RENPY CODE SO I MIGHT HAVE TO PROGRAM IT
 
-
-    s "holy fucking shit"
-    s "why the hell did you even make this shitty fuckin game."
+    s "Holy fucking shit."
+    s "Why the hell did you even make this shitty fucking game."
