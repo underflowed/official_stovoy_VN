@@ -5,6 +5,9 @@ define t = Character("Twitch Chat") #is this character necessary
 define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
 define m = Character("Maavrik", color="#FF69B4", image="m")
 define h = Character("Hatkii", color="#E961A5", image="h")
+# Declare flipped character images
+image m kukuru flip = (im.Flip("m kukuru.png", horizontal=True))
+image m kukukinu flip = (im.Flip("m kukukinu.png", horizontal=True))
 # Declare variables
 default tried_dev = None
 # Redefine left/right pos for our assets, use truecenter for center

@@ -1,4 +1,5 @@
 label hatstream:
+    "Early the next day..."
     scene bg hat room with fade
     show h normal at truecenter #place holder for stuff plan on just putting normal looking sprite for him here
     h "gee i sure am gay"
@@ -13,7 +14,7 @@ label hatstream:
     h "wow i sure am a good wow streamer"
     "Stovoy enters Hatkii's Twitch chat."
     show s normal at left
-    s "Jesus Christ what the hell is this."
+    s "Jesus Christ what the hell is this.{w} Why is the stream in 2 FPS, this isn't Ocarina of Time on N64."
     h "oh hi stovoy this is my wow stream! check out vanilla wow! isn't it so cool???"
     s "Why are you even playing on a private server, Blizzard is releasing WoW Classic soon."
     h "dude idk i just wanted to play vanilla wow now{p}anyways wanna play with me on this server?"
@@ -41,7 +42,7 @@ label hatqbt:
     h "no i guess not"
     s scheming "Alright go download μTorrent"
     "Maavrik finally wakes up after having fallen asleep earlier, due to watching a really boring game being played on stream."
-    show image(im.Flip("m kukuru.png", horizontal=True)) as m at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s #get better layering/positioning lmao
+    show m kukuru flip as m at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s
     m "wtf? don't tell him to download a virus smh go get qbittorrent"
     s "Yeah, Maavrik's right go get qBitTorrent. hehehe"
     m "why are you messing with hatkii smh"
@@ -50,13 +51,11 @@ label hatqbt:
     "And so, Stovoy and Maavrik pranked Hatkii for a good hour, which included hopping onto voice chat with him, and making fun of him while watching him struggle to operate qBitTorrent."
     m "we should've told him to use deluge :^)"
     s "And you call me cruel?"
-    show image(im.Flip("m kukukinu.png", horizontal=True)) as mk at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s
-    m kukukinu "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\\Users\\Public\\Documents"
+    m kukukinu flip "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\\Users\\Public\\Documents"
     h scared "WHAT? WHAT AM I DOING WRONG?"
     "Hatkii cancels the extraction."
     s "Actually, that wasn't exactly a bad location to install to or anything, it's just weird."
-    hide mk
-    m "they probably did that to avoid permission errors lol"
+    m kukuru flip "they probably did that to avoid permission errors lol"
     h normal "well fuck you maavrik i'm going to restart installing now"
     h "wait it has to re-extract?"
     m "OMEGALUL pranked"
