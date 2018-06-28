@@ -47,4 +47,4 @@ label endoftacosaga:
     t "your computer is WW2 era dude"
     s "this things a fucking beast shut up."
     "He then drops a whole ass cpu cooler on his new shit"
-    s "{b}FUCK{b}
+    s "{b}FUCK{b}"
