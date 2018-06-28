@@ -34,8 +34,10 @@ label endoftacosaga:
     s "Guys, I just got these new PC parts, and they're the fucking shit."
     t "dude why does the front io on your old motherboard look more modern than the new one"
     s "..."
+    show ramfan at truecenter
     s "I got a RAM fan tho..."
     t "shit you right"
+    hide ramfan
     s "I'm kinda stressed now however... Let's play some {nw}"
     play music "lofi.mp3"
     s "I'm kinda stressed now however... Let's play some {fast}{i}l o  -  f i{/i}"
