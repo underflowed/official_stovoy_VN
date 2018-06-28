@@ -1,7 +1,7 @@
 # Declare characters
 define s = Character("Stovoy", color="#1E90FF", image="s")
 define e = Character("Evades.io") #is this character necessary
-define t = Character("Twitch Chat") #is this character necessary
+define t = Character("Twitch Chat", color="#47d1d1") #will be necessary in order to refer to randos in stream, to avoid getting more sprites
 define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
 define m = Character("Maavrik", color="#FF69B4", image="m")
 define h = Character("Hatkii", color="#E961A5", image="h")
