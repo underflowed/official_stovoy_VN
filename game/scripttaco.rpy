@@ -16,13 +16,71 @@ label taco_truck:
     s "I will commit seppuku."
     m "..."
 
-    #IMPLEMENT SNAKE HERE IN THE FUTURE CANT FIND ANY RENPY CODE SO I MIGHT HAVE TO PROGRAM IT
+    "IMPLEMENT SNAKE HERE IN THE FUTURE CANT FIND ANY RENPY CODE SO I MIGHT HAVE TO PROGRAM IT"
+    "wait you werent supposed to see that..."
+    "uhhhh. just pretend there's snake here."
+
 
     s "Holy fucking shit."
     s "Why the hell did you even make this shitty fucking game."
+    s "One of your programmers cant even implement snake."
+    s "I made it in fucking {w} {b}L O L C O D E{/b}"
+    m "look bud not my fault the dudes dumb."
+    s "..."
+    m "..."
+
+    menu:
+        m "You wanna just get stoned?"
+
+        "yeah fuck it":
+            jump getstonedending
+        "no dude i am a man of christ":
+            s "fuck that shit im going home"
+            m "fucker"
+            jump endoftacosaga
 
 
-# new idea for jump in this RPY or entirely new Script
+
+
+
+label getstonedending:
+            scene bg getstoned
+            show s stoned at left
+            show m stoned at right
+            #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
+            s "Duuuuude... what if i programmed snake with like... assembly right now"
+            m "You're a little too obssessed with making snake dude this is getting out of hand"
+            m "However NOW I can go for some fucking tacos."
+            s "sick I bought a stupid amount of taco making shit with my sweet lawsuit money."
+            m "sick"
+            show m kukueattaco at right
+            m "chomp"
+            s "nice"
+            show s eattaco at left
+            s "chomp"
+
+            show black with fade
+            "Congrats you got the Stoned Devolper Ending!"
+            return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label endoftacosaga:
     scene bg stovoysroom with fade
