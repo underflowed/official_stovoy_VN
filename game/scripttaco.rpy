@@ -38,30 +38,29 @@ label taco_truck:
         "no dude i am a man of christ":
             s "Fuck that shit, I'm going home."
             m "fucker"
-            jump trueending
+            jump endoftacosaga
 
 
 label getstonedending:
-            scene bg getstoned
-            show s stoned at left
-            show m stoned at right
-            #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
-            s "Duuuuude... {w=1}what if I programmed snake with like... {w=1}Brainfuck... {w=1}right now..."
-            m "You're a little too obssessed with making Snake dude this is getting out of hand"
-            m "However NOW I can go for some fucking tacos."
-            s "Sick bro... {w=1}I bought a stupid amount of taco making shit with my sweet lawsuit money."
-            m "sick"
-            show m eattaco at right
-            m "{i}chomp{/i}"
-            s "nice"
-            show s eattaco at left
-            s "{i}chomp{/i}"
-            show black with fade
-            "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
-            return
+        scene bg getstoned
+        show s stoned at left
+        show m stoned at right
+        #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
+        s "Duuuuude... {w=1}what if I programmed snake with like... {w=1}Brainfuck... {w=1}right now..."
+        m "You're a little too obssessed with making Snake dude this is getting out of hand"
+        m "However NOW I can go for some fucking tacos."
+        s "Sick bro... {w=1}I bought a stupid amount of taco making shit with my sweet lawsuit money."
+        m "sick"
+        show m eattaco at right
+        m "{i}chomp{/i}"
+        s "nice"
+        show s eattaco at left
+        s "{i}chomp{/i}"
+        show black with fade
+        "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
+        return
 
-
-label trueending:
+label endoftacosaga:
     scene bg stovoysroom with fade
     show s tryhard at truecenter
 
@@ -89,56 +88,58 @@ label trueending:
     show s tryhard at truecenter
     with hpunch
     s "{b}FUCK{/b}"
-    s "... Ok I think its coo-"
+    s "... OK I think its coo-"
     scene black with fade
-    "His new motherboard began to release an engulfing darkness from the cpu socket"
-    "The entire room was consumed"
-    "Stovoy began to feel... something"
-    "Mav and Hat bust through the door of his room"
+    "His new motherboard began to release an engulfing darkness from the CPU socket."
+    "The entire room was consumed."
+    "Stovoy began to feel... something."
+    "Maavrik and Hatkii bust through the door of his room."
     m "dude what the fuck I can't see anything"
     h "god why'd you have to drag me into this..."
-    "Mavs eyes began to adjust to the darkness"
+    m "shut up hatkii"
+    "Maavrik's eyes began to adjust to the darkness..."
     m "dude... I think I see something."
     m "..."
-    m "..."
-    m "what {w} the {w} fuck"
-    "In the darkness mav made out a figure, no human should ever come across..."
+    m "......"
+    m "what {w}the {w}fuck"
+    "In the darkness, Maavrik made out a figure, of which no human should ever come across..."
+    jump trueending
+
+label trueending:
     play music "megolavania.mp3"
     show s sansvoy at truecenter:
         zoom 2.0 #adding this zoom effect because the image is too small
     with Fade(0.0, 0.0, 15.0)
-
-
-    sv "hey mav... you're going to have a bad time."
+    sv "Hey Maav... You're gonna have a bad time."
     m "JESUS CHRIST"
     m "dude what the fuck happened"
     sv "I have ascended beyond this plane of existence."
     sv "{b}NOTHING CAN STOP ME ANYMORE{/b}"
-    sv "Everyone will play snake until they {i}DIE{/i}"
+    sv "Everyone will play snake until they {w}{size=24}{b}{i}DIE{/i}{/b}{/size}"
     m "I have to think of something before he makes everybody play that boring ass game..."
     m "well actually come to think of it its not that hard"
-    show s sansvoy at left:
-        zoom 2.0
+    show s sansvoy at left
     show m kukugun at right
     m "bye bye"
     stop music
     play sound "gunshot.ogg"
-
+    scene black with None
+    with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
 
     scene bg room
     show s normal at left
     show m kukuru at right
-    s "uuuughh my everything hurts."
-    s "dude what the hell happened?"
+    s "Uuuughh...{w=1} my everything hurts."
+    s "Dude, what the hell happened?"
     m "..."
-    m "well first summer proposed to make this stupid fucking game and then he made a github and i kinda got dragged into this then a bunch of shit happened and yeah you turned into sans from undertale {nw}"
+    m "well first summer proposed to make this stupid fucking game and then he made a github and i kinda got dragged into this then a bunch of shit happened and yeah you turned into sans from undertale"
     s "... wow"
     m "yeah."
-    s "Uhh well I guess I'll go back to streaming"
-    m "Well actually there's a strong possibility that the person currently playing this is 3rd dimension you"
+    s "Uhh, well, I guess I'll go back to streaming."
+    m "Well actually, there's a strong possibility that the person currently playing this is 3rd dimension you"
     m "Who is also probably streaming this right now."
     s "Okay you know what just end the fucking game"
 
     show black with fade
     play sound "victory.mp3"
-    "{b}Congrats you got the true ending!{/b}"
+    "{b}Congratulations, you got the True Ending!{/b}"
