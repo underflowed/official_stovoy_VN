@@ -1,3 +1,4 @@
+define sv = Character("Sansvoy", color="#1E90FF", image="s")
 label taco_truck:
     scene bg tacotruck with fade
     show s worried at truecenter
@@ -37,7 +38,7 @@ label taco_truck:
         "no dude i am a man of christ":
             s "Fuck that shit, I'm going home."
             m "fucker"
-            jump endoftacosaga
+            jump trueending
 
 
 label getstonedending:
@@ -50,7 +51,7 @@ label getstonedending:
             m "However NOW I can go for some fucking tacos."
             s "Sick bro... {w=1}I bought a stupid amount of taco making shit with my sweet lawsuit money."
             m "sick"
-            show m kukutaco at right
+            show m eattaco at right
             m "{i}chomp{/i}"
             s "nice"
             show s eattaco at left
@@ -60,7 +61,7 @@ label getstonedending:
             return
 
 
-label endoftacosaga:
+label trueending:
     scene bg stovoysroom with fade
     show s tryhard at truecenter
 
@@ -84,4 +85,60 @@ label endoftacosaga:
     t "your computer is WW2 era dude"
     s "This thing is a fucking beast, shut up."
     "{i}He then drops a whole ass CPU cooler on his new shit{/i}"
+    stop music
+    show s tryhard at truecenter
+    with hpunch
     s "{b}FUCK{/b}"
+    s "... Ok I think its coo-"
+    scene black with fade
+    "His new motherboard began to release an engulfing darkness from the cpu socket"
+    "The entire room was consumed"
+    "Stovoy began to feel... something"
+    "Mav and Hat bust through the door of his room"
+    m "dude what the fuck I can't see anything"
+    h "god why'd you have to drag me into this..."
+    "Mavs eyes began to adjust to the darkness"
+    m "dude... I think I see something."
+    m "..."
+    m "..."
+    m "what {w} the {w} fuck"
+    "In the darkness mav made out a figure, no human should ever come across..."
+    play music "megolavania.mp3"
+    show s sansvoy at truecenter:
+        zoom 2.0 #adding this zoom effect because the image is too small
+    with Fade(0.0, 0.0, 15.0)
+
+
+    sv "hey mav... you're going to have a bad time."
+    m "JESUS CHRIST"
+    m "dude what the fuck happened"
+    sv "I have ascended beyond this plane of existence."
+    sv "{b}NOTHING CAN STOP ME ANYMORE{/b}"
+    sv "Everyone will play snake until they {i}DIE{/i}"
+    m "I have to think of something before he makes everybody play that boring ass game..."
+    m "well actually come to think of it its not that hard"
+    show s sansvoy at left:
+        zoom 2.0
+    show m kukugun at right
+    m "bye bye"
+    stop music
+    play sound "gunshot.ogg"
+
+
+    scene bg room
+    show s normal at left
+    show m kukuru at right
+    s "uuuughh my everything hurts."
+    s "dude what the hell happened?"
+    m "..."
+    m "well first summer proposed to make this stupid fucking game and then he made a github and i kinda got dragged into this then a bunch of shit happened and yeah you turned into sans from undertale {nw}"
+    s "... wow"
+    m "yeah."
+    s "Uhh well I guess I'll go back to streaming"
+    m "Well actually there's a strong possibility that the person currently playing this is 3rd dimension you"
+    m "Who is also probably streaming this right now."
+    s "Okay you know what just end the fucking game"
+
+    show black with fade
+    play sound "victory.mp3"
+    "{b}Congrats you got the true ending!{/b}"
