@@ -86,6 +86,7 @@ label start_game:
 
 label quick_continue:
     hide dim with dissolve
+    play music "solitaire.ogg"
     while True:
         python:
             ui.textbutton("Retry", ui.jumps("pre_start_game"), xalign=.02, yalign=.98)
@@ -100,4 +101,6 @@ label win:
     show boom
     show dim
     with dissolve
-    m "good work :^){p}this part of the VN brought to you in part by {a=https://github.com/SusanTheCat/SolitaireProject}this GitHub project{/a}"
+    "good work :^){p}This part of the VN brought to you in part by {a=https://github.com/SusanTheCat/SolitaireProject}this GitHub project.{/a}"
+    "This music brought to you by the best Nintendo DS game ever made, {a=https://en.wikipedia.org/wiki/Clubhouse_Games}Clubhouse Games.{/a}"
+    return

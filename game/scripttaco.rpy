@@ -106,21 +106,32 @@ label endoftacosaga:
     jump trueending
 
 label trueending:
-    play music "megolavania.mp3"
+    play music "megalovania.mp3" #this don't loop properly lol
     show s sansvoy at truecenter:
         zoom 2.0 #adding this zoom effect because the image is too small
     with Fade(0.0, 0.0, 15.0)
     sv "Hey Maav... You're gonna have a bad time."
+    show m kukuru at right
     m "JESUS CHRIST"
     m "dude what the fuck happened"
     sv "I have ascended beyond this plane of existence."
     sv "{b}NOTHING CAN STOP ME ANYMORE{/b}"
-    sv "Everyone will play snake until they {w}{size=24}{b}{i}DIE{/i}{/b}{/size}"
+    sv "Everyone will play Snake until they {w}{size=140}{b}{i}DIE{/i}{/b}{/size}"
     m "I have to think of something before he makes everybody play that boring ass game..."
+    m "or even worse, actually make people play Undertale in 2018..."
     m "well actually come to think of it its not that hard"
-    show s sansvoy at left
-    show m kukugun at right
-    m "bye bye"
+    $k = DblKlondike(1)
+    call pre_start_game # :^)
+
+    scene black with fade
+    play music "<from 112.452>megalovania.mp3" noloop
+    queue music "megalovania.mp3"
+    show s sansvoy at left:
+        zoom 2
+    show m kukuru at right
+    sv "holy shit i beat that fucking solitaire meme"
+    sv "now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}"
+    m kukugun "bye bye"
     stop music
     play sound "gunshot.ogg"
     scene black with None
@@ -129,17 +140,22 @@ label trueending:
     scene bg room
     show s normal at left
     show m kukuru at right
-    s "Uuuughh...{w=1} my everything hurts."
+    s "Uuuughh...{w=1} My everything hurts."
     s "Dude, what the hell happened?"
     m "..."
     m "well first summer proposed to make this stupid fucking game and then he made a github and i kinda got dragged into this then a bunch of shit happened and yeah you turned into sans from undertale"
     s "... wow"
     m "yeah."
     s "Uhh, well, I guess I'll go back to streaming."
-    m "Well actually, there's a strong possibility that the person currently playing this is 3rd dimension you"
-    m "Who is also probably streaming this right now."
-    s "Okay you know what just end the fucking game"
+    m "Well actually, there's a strong possibility that the person currently playing this is the real you"
+    m "we are just a simulation, stovoy"
+    s "What the fuck are you talking about."
+    m "we are not the real representations of ourselves, rather we are purely data that is supposed to represent us in a fictional sense"
+    s "Stop spouting nonsense."
+    m "i assure you none of this is nonsense, and there is also a high chance that the real you is streaming this right now"
+    s "Okay you know what just end this fucking game"
 
     show black with fade
     play sound "victory.mp3"
     "{b}Congratulations, you got the True Ending!{/b}"
+    return
