@@ -119,17 +119,17 @@ label trueending:
     show s sansvoy at truecenter:
         zoom 2.0 #adding this zoom effect because the image is too small
     with Fade(0.0, 0.0, 15.0)
-    sv "{cps=20}Hey Maav... You're gonna have a bad time.{/cps}"
+    sv "{cps=20}Hey Maav... {w}You're gonna have a bad time.{/cps}"
     show m kukuru at right
     m "JESUS CHRIST"
     m "JESUS CHRIST {fast}{nw}IT'S JASON BOURNE"
     m "dude what the fuck happened"
     sv "{cps=20}I have ascended beyond this plane of existence.{/cps}"
     sv "{cps=20}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
-    sv "{cps=20}Everyone will play Snake until they {w}{size=140}{b}{i}DIE{/i}{/b}{/size}{/cps}"
+    sv "{cps=20}Everyone will play Snake until they {p}{size=140}{b}{i}DIE{/i}{/b}{/size}{/cps}"
     m "I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in 2018..."
-    m "well actually come to think of it its not that hard"
+    m "well actually come to think of it, its not that hard"
     $k = DblKlondike(1)
     call pre_start_game # :^)
 
@@ -140,7 +140,7 @@ label trueending:
     show m kukuru at right
     sv "{cps=20}holy shit i beat that fucking solitaire meme{/cps}"
     sv "{cps=20}Now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
-    sv "{cps=20}All you motherfuckers are gonna play some fucking {w}{size=140}{b}{i}SNAKE{/i}{/b}{/size}{/cps}"
+    sv "{cps=20}All you motherfuckers are gonna play some fucking {p}{size=140}{b}{i}SNAKE{/i}{/b}{/size}{/cps}"
     m kukugun "bye bye"
     scene black with None
     stop music
@@ -159,13 +159,16 @@ label trueending:
     s "Uhh, well, I guess I'll go back to streaming."
     m "Well actually, there's a strong possibility that the person currently playing this is the real you"
     m "we are just a simulation, stovoy"
+    play music "<to 126.124>arsenalsguts.ogg"
     s "What the fuck are you talking about."
     m "we are not the real representations of ourselves, rather we are purely data that is supposed to represent us in a fictional sense"
     s "Stop spouting nonsense."
     m "i assure you none of this is nonsense, and there is also a high chance that the real you is streaming this right now"
+    play music "<from 126.200 to 281.995>arsenalsguts.ogg"
+    s "Are you kidding me?  What the fuck are you talking about?"
     s "Okay you know what just end this fucking game"
 
     show black with fade
-    play sound "victory.mp3"
+    play music "victory.mp3" noloop
     "{b}Congratulations, you got the True Ending!{/b}"
     return
