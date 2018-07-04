@@ -127,11 +127,16 @@ label trueending:
     sv "{cps=20}I have ascended beyond this plane of existence.{/cps}"
     sv "{cps=20}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
     sv "{cps=20}Everyone will play Snake until they {p}{size=140}{b}{i}DIE{/i}{/b}{/size}{/cps}"
-    m "I have to think of something before he makes everybody play that boring ass game..."
+    show h normal at left
+    h "what the fuck, why is stovoy sans?"
+    h "and why does he get the speech effect and i dont"
+    m "shut up hatkii"
+    sv "yeah shut up"
+    m "Hmm, I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in 2018..."
     m "well actually come to think of it, its not that hard"
     $k = DblKlondike(1)
-    call pre_start_game # :^)
+    call pre_start_game # :^), also i might make the start of the game more abrupt for humour
 
     scene black with fade
     play music "<from 112.452 loop 0>megalovania.mp3"
