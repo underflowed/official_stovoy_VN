@@ -113,6 +113,7 @@ label trueending:
     sv "Hey Maav... You're gonna have a bad time."
     show m kukuru at right
     m "JESUS CHRIST"
+    m "JESUS CHRIST {fast}{nw}IT'S JASON BOURNE"
     m "dude what the fuck happened"
     sv "I have ascended beyond this plane of existence."
     sv "{b}NOTHING CAN STOP ME ANYMORE{/b}"
