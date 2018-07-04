@@ -65,7 +65,7 @@ label getstonedending:
         s "nice"
         show s eattaco at left
         s "{i}chomp{/i}"
-        show black with fade
+        scene black with fade
         "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
         return
 
@@ -173,7 +173,7 @@ label trueending:
     s "Are you kidding me?  What the fuck are you talking about?"
     s "Okay you know what just end this fucking game"
 
-    show black with fade
+    scene black with fade
     play music "victory.mp3" noloop
     "{b}Congratulations, you got the True Ending!{/b}"
     return
