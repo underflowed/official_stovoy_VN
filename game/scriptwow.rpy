@@ -41,7 +41,7 @@ label hatqbt:
     s worried "Are you fucking kidding me right now?  You've never torrented anything before?"
     h "no i guess not"
     s scheming "Alright go download μTorrent"
-    "Maavrik finally wakes up after having fallen asleep earlier, due to watching a really boring game being played on stream."
+    "Maavrik finally wakes up after having fallen asleep earlier, due to watching a really boring game being played on Hatkii's stream."
     show m kukuru flip as m at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s
     m "wtf? don't tell him to download a virus smh go get qbittorrent"
     s "Yeah, Maavrik's right go get qBitTorrent. hehehe"
@@ -56,16 +56,55 @@ label hatqbt:
     "Hatkii cancels the extraction."
     s "Actually, that wasn't exactly a bad location to install to or anything, it's just weird."
     m kukuru flip "they probably did that to avoid permission errors lol"
-    h normal "well fuck you maavrik i'm going to restart installing now"
+    h normal "well fuck you maavrik i'm going to start installing again now"
     h "wait it has to re-extract?"
-    m "OMEGALUL pranked"
-    h "fucking maavrikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+    m "{image=omegalul.png} pranked"
+    h "fucking maavrikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
     scene black with fade
 
 label wowstream:
     "Finally, after Hatkii spent close to 2 hours installing, while Stovoy spent closer to 15 minutes, Stovoy began streaming WoW."
     scene bg wow
-    s "this scene under development xd" #ill add more later i have things to do
+    s "Damn, vanilla WoW sure is nicer looking than I remember."
+    h "yeah, isn't it cool?"
+    s "Yeah, sure Hatkii..."
+    h "try and tell me you're not having fun"
+    s "I'm not having fun, Hatkii."
+    h "..."
+    "Maavrik joins the chat."
+    m "jesus christ why are you playing this game"
+    s "Because it's fun Maav, you should come join us!"
+    m "no :^)"
+    "The minutes become hours, and the hours become days... Stovoy streams WoW for what seems like an eternity."
+    "Maavrik rejoins the chat, after having left earlier..."
+    m "how the fuck are you still streaming, it's been 9 hours bro"
+    s "No way, it hasn't been 9 hours, you're bluffing."
+    m "look at the chat, Stay_Hydrated_Bot has been talking to itself for the past 3 hours since your chat is dead as hell"
+    #some shit where stay_hydrated_bot talks a single time
+    s "shit{nw}"
+    s "Well, at least I'm having fun!"
+    s "Hey Hatkii, Bunny, get over here, we're going to take a screenshot together, just like the old times!"
+    h "i never had any friends so taking a screenshot isn't nostalgic for me"
+    s "shut up hatkii"
+    scene black with fade
+    "The trio get into position..."
+    scene bg wow ss
+    s "Okay Bunny, get into position, and face the same direction as us."
+    "{i}Bunny moves around indiscriminately.{/i}"
+    s "Why isn't Bunny talking?"
+    h "bunny doesn't have a mic"
+    s "Right...  Well, we'll just wait for Bunny to get into position."
+    "{i}Bunny fidgets around for about 30 seconds, rather than getting into position.{/i}"
+    s "Okay, fuck it, I'm just going to take the screenshot."
+    #play sound screenshot.ogg
+    "{i}The screenshot is taken by Stovoy.{/i}"
+    s "There we go, a perfect memory of our time in WoW!"
+    s "Now, to begin the quest to max Level."
+    h "that's going to take months!"
+    s "Perfect, and in \"months\", proper WoW Classic will be out, and we can play that instead."
+    h "{i}sigh{/i} okay..."
+    #this all sucks honestly, idk if i'll add/remove anything at this point
 
-
-    #play wow music eventually :^)
+label wowending:
+    "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
+    return
