@@ -1,4 +1,13 @@
-define sv = Character("Sansvoy", color="#1E90FF", image="s")
+init python:
+    def sansvoice(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show":
+            renpy.music.play("sansvoice.ogg", channel="sound", loop=True, tight=True, if_changed=True)
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
+define sv = Character("Sansvoy", color="#1E90FF", image="s", callback=sansvoice)
 label taco_truck:
     scene bg tacotruck with fade
     show s worried at truecenter
@@ -110,14 +119,14 @@ label trueending:
     show s sansvoy at truecenter:
         zoom 2.0 #adding this zoom effect because the image is too small
     with Fade(0.0, 0.0, 15.0)
-    sv "Hey Maav... You're gonna have a bad time."
+    sv "{cps=20}Hey Maav... You're gonna have a bad time.{/cps}"
     show m kukuru at right
     m "JESUS CHRIST"
     m "JESUS CHRIST {fast}{nw}IT'S JASON BOURNE"
     m "dude what the fuck happened"
-    sv "I have ascended beyond this plane of existence."
-    sv "{b}NOTHING CAN STOP ME ANYMORE{/b}"
-    sv "Everyone will play Snake until they {w}{size=140}{b}{i}DIE{/i}{/b}{/size}"
+    sv "{cps=20}I have ascended beyond this plane of existence.{/cps}"
+    sv "{cps=20}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
+    sv "{cps=20}Everyone will play Snake until they {w}{size=140}{b}{i}DIE{/i}{/b}{/size}{/cps}"
     m "I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in 2018..."
     m "well actually come to think of it its not that hard"
@@ -125,17 +134,17 @@ label trueending:
     call pre_start_game # :^)
 
     scene black with fade
-    play music "<from 112.452>megalovania.mp3" noloop
-    queue music "megalovania.mp3"
+    play music "<from 112.452 loop 0>megalovania.mp3"
     show s sansvoy at left:
         zoom 2
     show m kukuru at right
-    sv "holy shit i beat that fucking solitaire meme"
-    sv "now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}"
+    sv "{cps=20}holy shit i beat that fucking solitaire meme{/cps}"
+    sv "{cps=20}Now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
+    sv "{cps=20}All you motherfuckers are gonna play some fucking {w}{size=140}{b}{i}SNAKE{/i}{/b}{/size}{/cps}"
     m kukugun "bye bye"
+    scene black with None
     stop music
     play sound "gunshot.ogg"
-    scene black with None
     with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
 
     scene bg room
