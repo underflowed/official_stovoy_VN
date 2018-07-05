@@ -31,7 +31,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     stop sound
     scene bg room
     show m kukuru at truecenter
-    m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to developing Evades.io!"
+    m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to working on Evades.io!"
     show m kukuru at mpos
     show s normal at rpypos
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"

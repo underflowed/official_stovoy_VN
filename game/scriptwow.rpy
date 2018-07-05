@@ -80,7 +80,7 @@ label wowstream:
     m "how the fuck are you still streaming, it's been 9 hours bro"
     s "No way, it hasn't been 9 hours, you're bluffing."
     m "look at the chat, Stay_Hydrated_Bot has been talking to itself for the past 3 hours since your chat is dead as hell"
-    #some shit where stay_hydrated_bot talks a single time
+    Character("Stay_Hydrated_Bot", color="#1F87EC") "@stovoy You've been live for just over 24 hours. By this point in your broadcast you should have consumed at least 192oz (5.76L) of water to maintain optimum hydration."
     s "shit{nw}"
     s "Well, at least I'm having fun!"
     s "Hey Hatkii, Bunny, get over here, we're going to take a screenshot together, just like the old times!"
@@ -96,15 +96,26 @@ label wowstream:
     s "Right...  Well, we'll just wait for Bunny to get into position."
     "{i}Bunny fidgets around for about 30 seconds, rather than getting into position.{/i}"
     s "Okay, fuck it, I'm just going to take the screenshot."
+    show bg wow ss
     #play sound screenshot.ogg
+    with Fade(0.1, 0.0, 0.5, color="#fff")
     "{i}The screenshot is taken by Stovoy.{/i}"
     s "There we go, a perfect memory of our time in WoW!"
-    s "Now, to begin the quest to max Level."
+    h "this feels stupid to do"
+    show p bripo at truecenter
+    p "shut up hatkii"
+    s "Whoa Polsaar, when did you get here?"
+    p "i asked maavrik to be in the vn"
+    m "yeah he did lol"
+    hide p
+    s "Whatever...  Now, to begin our speedrun to Lv60."
     h "that's going to take months!"
-    s "Perfect, and in \"months\", proper WoW Classic will be out, and we can play that instead."
-    h "{i}sigh{/i} okay..."
+    s "Guess it'll be a segmented speedrun. Lol."
+    h "this is a stupid idea"
+    m "shut up hatkii"
     #this all sucks honestly, idk if i'll add/remove anything at this point
 
 label wowending:
+    scene black with fade
     "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
     return

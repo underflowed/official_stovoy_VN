@@ -1,10 +1,11 @@
 # Declare characters
 define s = Character("Stovoy", color="#1E90FF", image="s")
 define e = Character("Evades.io") #is this character necessary
-define t = Character("Twitch Chat", color="#47d1d1") #will be necessary in order to refer to randos in stream, to avoid getting more sprites
+define t = Character("Twitch Chat", color="#47d1d1")
 define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
 define m = Character("Maavrik", color="#FF69B4", image="m")
 define h = Character("Hatkii", color="#E961A5", image="h")
+define p = Character("Polsaar", color="#4A8259", image="p")
 # Declare flipped character images
 image m kukuru flip = (im.Flip("m kukuru.png", horizontal=True))
 image m kukukinu flip = (im.Flip("m kukukinu.png", horizontal=True))
@@ -91,7 +92,7 @@ label after_menu:
             jump taco_truck #scripttaco.rpy
 
         "Abide by the punishment that has been placed upon me":
-            s "Ugh... Time to make Snake in LOLCODE..." #mfw he did this
+            s "Ugh... Time to make Snake in LOLCODE..."
             jump bad_end #bottom of this file
 
         "Fuck everything and go to sleep":
@@ -104,13 +105,10 @@ label after_menu:
             scene black with fade
             jump hatstream #scriptwow.rpy
 
-        "Derail this fucking game so I can program more maps for Evades.io" if tried_dev is True:
+        "Derail this fucking game so I can refactor Evades.io" if tried_dev is True:
             jump rpymeme #scriptmaav.rpy
 
 label bad_end:
     scene black with fade
     "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/swaggy/LOLCODE-Snake}sick repo out of it!{/a}"
-    return
-
-    # This ends the game.
     return
