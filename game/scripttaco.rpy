@@ -74,7 +74,7 @@ label endoftacosaga:
     show s tryhard at truecenter
 
     "The countless amounts of unimaginable perils that Stovoy has faced in this entire taco ordeal have left him tired, hungry, and alone."
-    "So, he went home.  For shelter, comfort, and acceptence. Also he had to build a computer, and thus let us watch him build his PC, live on Twitch."
+    "So, he went home.  For shelter, comfort, and acceptence.{p}Also he had to build a computer, and let us watch him build it live on Twitch."
 
     s "Guys, I just got these new PC parts, and they're the fucking shit."
     t "dude why does the front io on your old motherboard look more modern than the new one"
@@ -131,6 +131,7 @@ label trueending:
     h "what the fuck, why is stovoy sans?"
     h "and why does he get the speech effect and i dont"
     m "shut up hatkii"
+    show h sad
     sv "yeah shut up"
     m "Hmm, I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in 2018..."
@@ -153,7 +154,7 @@ label trueending:
     with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
 
     scene bg room
-    show s normal at left
+    show s normal at truecenter
     show m kukuru at right
     s "Uuuughh...{w=1} My everything hurts."
     s "Dude, what the hell happened?"
@@ -163,14 +164,31 @@ label trueending:
     m "yeah."
     s "Uhh, well, I guess I'll go back to streaming."
     m "Well actually, there's a strong possibility that the person currently playing this is the real you"
-    m "we are just a simulation, stovoy"
     play music "<to 126.124>arsenalsguts.ogg"
+    m "we are just a simulation, stovoy"
     s "What the fuck are you talking about."
     m "we are not the real representations of ourselves, rather we are purely data that is supposed to represent us in a fictional sense"
     s "Stop spouting nonsense."
     m "i assure you none of this is nonsense, and there is also a high chance that the real you is streaming this right now"
-    play music "<from 126.200 to 281.995>arsenalsguts.ogg"
     s "Are you kidding me?  What the fuck are you talking about?"
+    show h normal at left
+    h "Rumors about petty issues, misinterpretations, slander..."
+    m "All of this junk data preserved in an unfiltered state, growing at an alarming rate."
+    h "It will only slow down social progress, reduce the rate of evolution."
+    m "The digital society furthers human flaws and selectively rewards development of convenient half-truths."
+    h "Everyone grows up being told the same thing."
+    m "Be nice to other people."
+    h "But beat out the competition!"
+    m "\"You're special.\"{p}\"Believe in yourself and you will succeed.\""
+    h "But it's obvious from the start that only a few can succeed..."
+    play music "<from 126.200 to 281.995>arsenalsguts.ogg"
+    show s worried
+    m "You exercise your right to \"freedom\" and this is the result.{p}All rhetoric to avoid conflict and protect each other from hurt."
+    m "The untested truths spun by different interests continue to churn and accumulate in the sandbox of political correctness and value systems."
+    h "Everyone withdraws into their own small gated community, afraid of a larger forum.{p}They stay inside their little ponds, leaking whatever \"truth\" suits them into the growing cesspool of society at large."
+    m "The different cardinal truths neither clash nor mesh.{p}No one is invalidated, but nobody is right."
+    h "Not even natural selection can take place here.{p}The world is being engulfed in \"truth\"."
+    m "And this is the way the world ends.{p}Not with a bang, {w}but a whimper."
     s "Okay you know what just end this fucking game"
 
     scene black with fade
