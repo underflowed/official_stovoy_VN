@@ -19,9 +19,9 @@ label taco_truck:
     show m kukuru at right
 
     s "What the fuck are you doing here."
-    m "ill be fucking honest with you i just want some tacos"
+    m "ill be honest with you, i just want some fucking tacos"
     m kukugun "also get the fuck back to streaming"
-    s angry "Dude, fuck that shit. If I have to make snake..."
+    s angry "Dude, fuck that shit. {p}If I have to make snake..."
     s "One...{w} More...{w} Time..."
     s "I will commit seppuku."
     m "..."
@@ -30,11 +30,10 @@ label taco_truck:
     "wait you werent supposed to see that"
     "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh just pretend there's Snake here."
 
-
     s "Holy fucking shit."
     s "Why the hell did you even make this shitty fucking game."
     s "One of your programmers can't even implement Snake."
-    s "I made it in fucking {w}{b}L O L C O D E{/b}"
+    s "I made it in fucking {w}{b}{i}L O L C O D E{/i}{/b}"
     m "look bud not my fault the dudes dumb."
     s "..."
     m "..."
@@ -94,22 +93,25 @@ label endoftacosaga:
     s "This thing is a fucking beast, shut up."
     "{i}He then drops a whole ass CPU cooler on his new shit{/i}"
     stop music
-    show s tryhard at truecenter
-    with hpunch
+    show s tryhard at truecenter with hpunch
     s "{b}FUCK{/b}"
-    s "... OK I think its coo-"
-    scene black with fade
+    s "... Okay, {w}I think everything's coo-  {nw}"
+    scene black with None
+    play sound "thunder.ogg"
+    play music "rainloop.mp3" fadein 8
     "His new motherboard began to release an engulfing darkness from the CPU socket."
     "The entire room was consumed."
     "Stovoy began to feel... something."
     "Maavrik and Hatkii bust through the door of his room."
     m "dude what the fuck I can't see anything"
-    h "god why'd you have to drag me into this..."
+    h "what the fuck, why is it raining inside..."
+    h "god, {w=1}why'd you have to drag me into this..."
     m "shut up hatkii"
     "Maavrik's eyes began to adjust to the darkness..."
     m "dude... I think I see something."
     m "..."
     m "......"
+    stop music fadeout 8
     m "what {w}the {w}fuck"
     "In the darkness, Maavrik made out a figure, of which no human should ever come across..."
     jump trueending
@@ -162,7 +164,7 @@ label trueending:
     m "well first summer proposed to make this stupid fucking game and then he made a github and i kinda got dragged into this then a bunch of shit happened and yeah you turned into sans from undertale"
     s "... wow"
     m "yeah."
-    s "Uhh, well, I guess I'll go back to streaming."
+    s "Uhh, well... {p}I guess I'll go back to streaming."
     m "Well actually, there's a strong possibility that the person currently playing this is the real you"
     play music "<to 126.124>arsenalsguts.ogg"
     m "we are just a simulation, stovoy"
