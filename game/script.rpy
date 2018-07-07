@@ -26,9 +26,8 @@ label start:
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
     "All 10 of his loyal followers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
     "Day in and day out (Except for Mondays and Wednesdays), he would force himself into having to come back to these stupid idiots, thut halting any notion of the word \"productivity\"."
-    "However, his 10 regulars and Stovoy himself, know that this is futile."
-    "We do as much coding as we do Brazilian Lap Dancing."
-    "Which, to clarify, is none."
+    "Stovoy himself and his 10 follows know that whenever he streams, any sense of productivity is futile."
+    "We do as much programming as we do Brazilian Lap Dancing.{p}Which, to clarify, is none."
     "Let us join Stovoy now, as he begins his stream on Twitch."
 
     scene bg twitch with dissolve
@@ -42,7 +41,7 @@ label start:
     sumer "i require knowledge of programming, feed me almighty developer"
     s   "Well, what do you wanna know..."
     sumer "everything"
-    s   "What's with this kid...?"
+    s   "{i}What's with this kid...?{/i}"
     hide sumer gay
 
     show m kukuru at truecenter
@@ -52,28 +51,27 @@ label start:
 
     s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
-        "What should I do?"
+        s "{i}What should I do?{/i}"
 
         "Actually develop Evades.io":
             $tried_dev = True
-            "Well, it never works out, even when I tell myself to do that..."
+            s "{i}Well, it never works out, even when I tell myself to do that...{/i}"
 
         "I should talk to these idiots, my sub counts are low":
             $tried_dev = False
-            "Ugh... fine..."
+            s "{i}Ugh... fine...{/i}"
 
 label after_menu:
-    s   "Alright, well, just... Sit and watch me code... I guess..."
+    s   "Alright, well, just... {w}Sit and watch me code... {w}I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
 
     show m kukuru at truecenter
     m   "hey check out this worthless youtube video"
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
-        from random import choice as rand #choice is already a renpy function
         url = "https://www.youtube.com/watch?v=" #get beginning of YouTube URL
         vids = ["Vlnh0KLVJJ0", "0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
-        open(url + rand(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
+        open(url + renpy.random.choice(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time, wasn't it? :^)"
     hide m kukuru
 
@@ -84,12 +82,6 @@ label after_menu:
 
     menu:
         s "I've got to figure something out..."
-
-        "Drop this hobby and get into the Mexican Taco Truck Business":
-            s "You know what? Fuck Snake and fuck you guys, I'm going into the Taco Trade."
-            scene black with fade
-            "And thus, Stovoy ended the stream, and instantly bought a Taco Truck with the infinite money he got by suing the people who made his parachute that failed when he went skydiving, with the settlement money he was awarded."
-            jump taco_truck #scripttaco.rpy
 
         "Abide by the punishment that has been placed upon me":
             s "Ugh... Time to make Snake in LOLCODE..."
@@ -104,6 +96,12 @@ label after_menu:
                 "Stovoy was restless that night, as he couldn't shake the fact that he was slowly becoming a sellout Twitch shill.{p}Inside, he knew he was a terrible person."
             scene black with fade
             jump hatstream #scriptwow.rpy
+
+        "Drop this hobby and get into the Mexican Taco Truck Business":
+            s "You know what? Fuck Snake and fuck you guys, I'm going into the Taco Trade."
+            scene black with fade
+            "And thus, Stovoy ended the stream, and instantly bought a Taco Truck with the infinite money he got by suing the people who made his parachute that failed when he went skydiving, with the settlement money he was awarded."
+            jump taco_truck #scripttaco.rpy
 
         "Derail this fucking game so I can refactor Evades.io" if tried_dev is True:
             jump rpymeme #scriptmaav.rpy

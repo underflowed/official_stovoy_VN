@@ -1,12 +1,13 @@
-define rpypos = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5)
-define mpos = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5)
+#define rpypos = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5) #these aren't needed anymore but i might use the positions in the future
+#define mpos = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5) #these aren't needed anymore but i might use the positions in the future
 define rpy = Character("Ren'Py Logo", color="#FF7F7F")
 
 label rpymeme: #selectable by choosing to actually develop Evades.io, leads to Good Developer ending
-    scene bg room with fade
-    show rpy at rpypos with dissolve
+    scene bg room
+    show rpy at left
+    with fade
     rpy "What the hell is this!?"
-    show m kukuru at mpos with dissolve
+    show m kukuru at right with dissolve
     m   "a visual novel? :^)"
     rpy "You call this a visual novel?  This is an abomination of the fantastic Ren'Py engine!"
     m   "is that an issue? :^)"
@@ -14,9 +15,10 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     m   "Well...  We can't have that now, can we..."
     rpy "..."
     m   "..."
-    show m kukugun at Position(xpos=0.25, xanchor=0.0, ypos=0.5, yanchor=0.5)
+    #show m kukugun at Position(xpos=0.25, xanchor=0.0, ypos=0.5, yanchor=0.5)
+    show m kukugun at truecenter
     m   "u die now"
-    show image(im.Grayscale("rpy.png")) as rpy at rpypos
+    show image(im.Grayscale("rpy.png")) as rpy
     rpy "shit"
 
     play music "hl2_song23_suitsong3.mp3" noloop
@@ -32,8 +34,8 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     scene bg room
     show m kukuru at truecenter
     m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to working on Evades.io!"
-    show m kukuru at mpos
-    show s normal at rpypos
+    show m kukuru at right
+    show s normal at left
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"
 
     #Good Developer ending
