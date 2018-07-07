@@ -167,7 +167,7 @@ label wowending:
     show m kukuru at truecenter
     m "lamo u got roasted br0"
     h "Maavrik.  I swear, I will kill you."
-    h "lol try it kiddo you're like 6 years old"
+    m "lol try it kiddo you're like 6 years old"
     show p bripo at right
     p "lmao hatkii why are you such an angry little bitch lol"
     h "Polsaar.  You'll be next."
@@ -204,11 +204,10 @@ label rps_winner:
     hide h with dissolve
     "Hatkii dies.  {w}Peace is restored."
 
-    show bg room
+    scene bg room with fade
     show s normal at left
     show p bripo at truecenter
     show m kukuru at right
-    with fade
     s "Wow, what a crazy ride with Hatkii!  Sure is a shame he had to die though."
     p "nah fuck that kid he was dum lol"
     m "for once i agree with pols"
