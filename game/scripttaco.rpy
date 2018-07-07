@@ -51,7 +51,8 @@ label taco_truck:
 
 label getstonedending:
         scene bg getstoned
-        show s stoned at left
+        show s stoned at left:
+            zoom 2.0
         show m stoned at right
         #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
         s "Duuuuude... {w=1}what if I programmed snake with like... {w=1}Brainfuck... {w=1}right now..."
@@ -59,10 +60,12 @@ label getstonedending:
         m "However NOW I can go for some fucking tacos."
         s "Sick bro... {w=1}I bought a stupid amount of taco making shit with my sweet lawsuit money."
         m "sick"
-        show m eattaco at right
+        show m eattaco at right:
+            zoom 2.0
         m "{i}chomp{/i}"
         s "nice"
-        show s eattaco at left
+        show s eattaco at left:
+            zoom 2.0
         s "{i}chomp{/i}"
         scene black with fade
         "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
@@ -141,6 +144,7 @@ label trueending:
     $k = DblKlondike(1)
     call pre_start_game # :^), also i might make the start of the game more abrupt for humour
 
+label devjump: #making this so i dont have to play fucking solitaire
     scene black with fade
     play music "<from 112.452 loop 0>megalovania.mp3"
     show s sansvoy at left:
@@ -155,8 +159,9 @@ label trueending:
     play sound "gunshot.ogg"
     with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
 
-    scene bg room
-    show s normal at truecenter
+    scene bg stovoysroom
+    show s normal at truecenter:
+        zoom 2.0
     show m kukuru at right
     s "Uuuughh...{w=1} My everything hurts."
     s "Dude, what the hell happened?"
@@ -184,14 +189,21 @@ label trueending:
     m "\"You're special.\"{p}\"Believe in yourself and you will succeed.\""
     h "But it's obvious from the start that only a few can succeed..."
     play music "<from 126.200 to 281.995>arsenalsguts.ogg"
-    show s worried
+    scene black with Fade(1.0, 0.0, 0.0)
+    show m kukuru at truecenter
+    show h normal at right
     m "You exercise your right to \"freedom\" and this is the result.{p}All rhetoric to avoid conflict and protect each other from hurt."
     m "The untested truths spun by different interests continue to churn and accumulate in the sandbox of political correctness and value systems."
     h "Everyone withdraws into their own small gated community, afraid of a larger forum.{p}They stay inside their little ponds, leaking whatever \"truth\" suits them into the growing cesspool of society at large."
     m "The different cardinal truths neither clash nor mesh.{p}No one is invalidated, but nobody is right."
     h "Not even natural selection can take place here.{p}The world is being engulfed in \"truth\"."
     m "And this is the way the world ends.{p}Not with a bang, {w}but a whimper."
+    scene bg stovoysroom
+    stop music
+    show s normal at truecenter:
+        zoom 2.0
     s "Okay you know what just end this fucking game"
+
 
     scene black with fade
     play music "victory.mp3" noloop
