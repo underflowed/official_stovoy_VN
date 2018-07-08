@@ -11,3 +11,4 @@ errors.txt
 files.txt
 *.bak
 scriptmaavdev.rpy
+*.rpymc

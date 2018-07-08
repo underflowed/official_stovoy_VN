@@ -21,7 +21,9 @@ label taco_truck:
     s "What the fuck are you doing here."
     m "ill be honest with you, i just want some fucking tacos"
     m kukugun "also get the fuck back to streaming"
-    s angry "Dude, fuck that shit. {p}If I have to make snake..."
+    show s angry:
+        zoom 2.0
+    s "Dude, fuck that shit. {p}If I have to make snake..."
     s "One...{w} More...{w} Time..."
     s "I will commit seppuku."
     m "..."
@@ -73,7 +75,8 @@ label getstonedending:
 
 label endoftacosaga:
     scene bg stovoysroom with fade
-    show s tryhard at truecenter
+    show s tryhard at truecenter:
+        zoom 2.0
 
     "The countless amounts of unimaginable perils that Stovoy has faced in this entire taco ordeal have left him tired, hungry, and alone."
     "So, he went home.  For shelter, comfort, and acceptence.{p}Also he had to build a computer, and let us watch him build it live on Twitch."
