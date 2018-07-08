@@ -74,7 +74,7 @@ label getstonedending:
         return
 
 label endoftacosaga:
-    scene bg stovoysroom with fade
+    scene bg room with fade
     show s tryhard at truecenter:
         zoom 2.0
 
@@ -162,7 +162,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     play sound "gunshot.ogg"
     with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
 
-    scene bg stovoysroom
+    scene bg room
     show s normal at truecenter:
         zoom 2.0
     show m kukuru at right
@@ -201,7 +201,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     m "The different cardinal truths neither clash nor mesh.{p}No one is invalidated, but nobody is right."
     h "Not even natural selection can take place here.{p}The world is being engulfed in \"truth\"."
     m "And this is the way the world ends.{p}Not with a bang, {w}but a whimper."
-    scene bg stovoysroom
+    scene bg room
     stop music
     show s normal at truecenter:
         zoom 2.0
