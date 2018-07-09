@@ -32,6 +32,10 @@ define config.version = "0.69_beta"
 define gui.about = _p("""This game is about Stovoy.  He is a programmer.
 
 He programs Evades.io live, on Twitch.  Except, he doesn't really get to program anything.
+
+Join us on this spectacular adventure through numerous perils, the likes of which have never been seen before.
+
+This game has 7 endings, including fake endings.  You'll have to count them by yourself because Summer wanted the game out ASAP so Maavrik don't have time to learn how to make an "achieved endings" screen. :^)
 """)
 
 
@@ -121,7 +125,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 60
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
