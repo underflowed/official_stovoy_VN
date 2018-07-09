@@ -1,4 +1,5 @@
 init python:
+    mp = MultiPersistent("supersecretstovoykey")
     def sansvoice(event, interact=True, **kwargs):
         if not interact:
             return
@@ -145,7 +146,7 @@ label trueending:
     m "or even worse, actually make people play Undertale in 2018..."
     m "well actually come to think of it, its not that hard"
     $k = DblKlondike(1)
-    call pre_start_game # :^), also i might make the start of the game more abrupt for humour
+    call pre_start_game from _call_pre_start_game # :^), also i might make the start of the game more abrupt for humour
 
 label devjump: #making this so i dont have to play fucking solitaire
     scene black with fade
@@ -210,5 +211,7 @@ label devjump: #making this so i dont have to play fucking solitaire
 
     scene black with fade
     play music "victory.mp3" noloop
+    $mp.beatofficialstovoyvntrueending = True
+    $mp.save()
     "{b}Congratulations, you got the True Ending!{/b}"
     return
