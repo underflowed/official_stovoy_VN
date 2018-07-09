@@ -88,7 +88,7 @@ label after_menu:
             jump bad_end #bottom of this file
 
         "Fuck everything and go to sleep":
-            s "Alright guys, today was a good stream, pretty long, but I'm gonna head off for today, hope to see you next stream!"
+            s "Alright guys, today was a good stream, pretty long, but I'm gonna head off for today.{p}Hope to see you next stream!"
             scene black with fade
             if tried_dev is True:
                 "Stovoy enjoyed a good sleep that night, knowing that despite his valiant efforts, he still attempted to develop Evades.io.{p}Inside, he was still a good person."
