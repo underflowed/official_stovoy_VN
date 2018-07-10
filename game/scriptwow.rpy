@@ -47,7 +47,7 @@ label hatqbt:
     h "alright, fine. {w}what's a torrent?"
     s worried "Are you fucking kidding me right now?  You've never torrented anything before?"
     h "no i guess not"
-    s scheming "Alright go download μTorrent"
+    s scheming "Alright, go download μTorrent."
     "Maavrik finally wakes up after having fallen asleep earlier, due to watching a really boring game being played on Hatkii's stream."
     show m kukuru flip as m at Position(xpos=0.00, xanchor=0.0, ypos=0.5, yanchor=0.5) behind s
     m "wtf? don't tell him to download a virus smh go get qbittorrent"
@@ -97,7 +97,7 @@ label wowstream:
     Character("Stay_Hydrated_Bot", color="#1F87EC") "@stovoy You've been live for just over 24 hours. By this point in your broadcast you should have consumed at least 192oz (5.76L) of water to maintain optimum hydration."
     s "shit{nw}"
     s "Well, at least I'm having fun!"
-    s "Hey Hatkii, Bunny, get over here, we're going to take a screenshot together, just like the old days!"
+    s "Hey Hatkii, Bunny, get over here.  {w}We're going to take a screenshot together, just like the old days!"
     h sad "i never had any friends so taking a screenshot isn't nostalgic for me"
     s "shut up hatkii"
     scene black with fade
@@ -186,13 +186,18 @@ label wowending:
     h evilangry "I'm going to obliterate you, player.  {w}The rules of this encounter are simple."
     scene black with fade
     show h evilangry at truecenter
+    play music "<to 150.033>rps.ogg"
     h "First to 3 wins, wins the set.{p}Whoever loses this set, is vanquished forever.\n{size=10}you might want to save now{/size}"
     jump rps_select #scriptrps.rpy
 
 label rps_winner:
     hide screen stats
+    stop music fadeout 5
+    show h at shake
     "You deliver a swift roundhouse kick to Hatkii.  He begins to die."
+    play music "sadviolin.mp3"
     h evilsad "What the actual fuck?  All it takes is a simple roundhouse kick to do me in?"
+    show s normal at left
     s "Maybe if you weren't such a weakling, this wouldn't have been the case."
     h "urgh... why did maav kill me in this vn..."
     show m kukuru at right
@@ -202,6 +207,7 @@ label rps_winner:
     m "mostly by choice lol"
     h "fuck..."
     hide h with dissolve
+    stop music fadeout 3
     "Hatkii dies.  {w}Peace is restored."
 
     scene bg room with fade
@@ -221,8 +227,25 @@ label rps_winner:
 
 label rps_gameover:
     hide screen stats
+    stop music fadeout 5
     "Hatkii takes off his beautiful gold chain necklace, and garrotes you with it.{p}You feel your vision going black..."
     scene black with fade
     h "Don't worry about the semantics on how I am strangling a human through a VN.  You are dead now."
     "{b}You died to Hatkii's hand in [currentyear].  You got the Worst Ending.\n{/b}{size=10}you should reload that save you took before this{/size}"
     return
+
+
+transform shake:
+        ease .06 yoffset 24
+        ease .06 yoffset -24
+        ease .05 yoffset 20
+        ease .05 yoffset -20
+        ease .04 yoffset 16
+        ease .04 yoffset -16
+        ease .03 yoffset 12
+        ease .03 yoffset -12
+        ease .02 yoffset 8
+        ease .02 yoffset -8
+        ease .01 yoffset 4
+        ease .01 yoffset -4
+        ease .01 yoffset 0
