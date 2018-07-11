@@ -18,6 +18,10 @@ define right = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5)
 define black = "#000"
 
 label start:
+    python:
+        if not persistent.set_volumes:
+            persistent.set_volumes = True
+            _preferences.volumes['music'] *= .70 
 
     scene bg room with fade #THIS IS A PLACEHOLDER IMAGE PLS FIX
     show s worried at truecenter
