@@ -72,7 +72,7 @@ label getstonedending:
         s "{i}chomp{/i}"
         scene black with fade
         "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
-        call credits
+        call credits from _call_credits_4
         return
 
 label endoftacosaga:
@@ -216,5 +216,5 @@ label devjump: #making this so i dont have to play fucking solitaire
     $mp.beatofficialstovoyvntrueending = True
     $mp.save()
     "{b}Congratulations, you got the True Ending!{/b}"
-    call credits
+    call credits from _call_credits_5
     return

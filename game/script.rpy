@@ -113,5 +113,5 @@ label after_menu:
 label bad_end:
     scene black with fade
     "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/swaggy/LOLCODE-Snake}sick repo out of it!{/a}"
-    call credits
+    call credits from _call_credits_3
     return

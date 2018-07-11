@@ -45,5 +45,5 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     $mp.beatofficialstovoyvngooddevending = True
     $mp.save()
     "{b}Good work, you got the Good Developer ending.{/b}"
-    call credits
+    call credits from _call_credits_2
     return
