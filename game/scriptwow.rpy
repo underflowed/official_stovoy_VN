@@ -133,7 +133,7 @@ label wowending:
     scene black with fade
     stop music fadeout 5
     "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
-    call fakecredits #:^)
+    call fakecredits from _call_fakecredits #:^)
     h "NOT SO FUCKING FAST{nw}"
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
