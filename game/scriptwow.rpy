@@ -131,7 +131,9 @@ label wowstream:
 
 label wowending:
     scene black with fade
+    stop music fadeout 5
     "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
+    call fakecredits #:^)
     h "NOT SO FUCKING FAST{nw}"
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
@@ -236,6 +238,14 @@ label rps_gameover:
     call credits from _call_credits_1
     return
 
+label fakecredits:
+    play music "extremeways.mp3"
+    show theend:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(5)
+    return
 
 transform shake:
         ease .06 yoffset 24
