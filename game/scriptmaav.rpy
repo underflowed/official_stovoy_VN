@@ -34,8 +34,8 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     scene bg room
     show m kukuru at truecenter
     m   "Great, now that we have that dumb logo out of the way, Stovoy can finally get back to working on Evades.io!"
-    show m kukuru at right
-    show s normal at left
+    show m kukuru at right with move
+    show s normal at left with dissolve
     s   "Wow, thanks a bunch Maavrik!  Now I can finally be at peace and finish refactoring Evades.io while Twitch chat tries to figure out what the fuck just happened!"
 
     #Good Developer ending

@@ -10,14 +10,15 @@ init python:
 
 define sv = Character("Sansvoy", color="#1E90FF", image="s", callback=sansvoice)
 label taco_truck:
-    scene bg tacotruck with fade
+    scene bg tacotruck
     show s worried at truecenter
+    with fade
 
     s "..."
     s "Well, what the fuck do I do now?"
 
-    show s worried at left
-    show m kukuru at right
+    show s worried at left with move
+    show m kukuru at right with dissolve
 
     s "What the fuck are you doing here."
     m "ill be honest with you, i just want some fucking tacos"
@@ -45,10 +46,12 @@ label taco_truck:
         m "You wanna just get stoned?"
 
         "yeah fuck it":
+            scene black with fade
             jump getstonedending
         "no dude i am a man of christ":
             s "Fuck that shit, I'm going home."
             m "fucker"
+            scene black with fade
             jump endoftacosaga
 
 
@@ -57,6 +60,8 @@ label getstonedending:
         show s stoned at left:
             zoom 2.0
         show m stoned at right
+        with fade
+        play music "nuffrespect.mp3"
         #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
         s "Duuuuude... {w=1}what if I programmed snake with like... {w=1}Brainfuck... {w=1}right now..."
         m "You're a little too obssessed with making Snake dude this is getting out of hand"
@@ -71,14 +76,16 @@ label getstonedending:
             zoom 2.0
         s "{i}chomp{/i}"
         scene black with fade
+        stop music fadeout 5
         "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
         call credits from _call_credits_4
         return
 
 label endoftacosaga:
-    scene bg room with fade
+    scene bg room
     show s tryhard at truecenter:
         zoom 2.0
+    with fade
 
     "The countless amounts of unimaginable perils that Stovoy has faced in this entire taco ordeal have left him tired, hungry, and alone."
     "So, he went home.  For shelter, comfort, and acceptence.{p}Also he had to build a computer, and let us watch him build it live on Twitch."
@@ -111,10 +118,10 @@ label endoftacosaga:
     "His new motherboard began to release an engulfing darkness from the CPU socket."
     "The entire room was consumed."
     "Stovoy began to feel... something."
-    "Maavrik and Hatkii bust through the door of his room."
+    "Maavrik and Hatkii burst through Stovoy's room door."
     m "dude what the fuck I can't see anything"
     h "what the fuck, why is it raining inside..."
-    h "god, {w=1}why'd you have to drag me into this..."
+    h "god, {w=0.5}why'd you have to drag me into this..."
     m "shut up hatkii"
     "Maavrik's eyes began to adjust to the darkness..."
     m "dude... I think I see something."
@@ -141,12 +148,11 @@ label trueending:
     show h normal at left
     h "what the fuck, why is stovoy sans?"
     h "and why does he get the speech effect and i dont"
-    m "shut up hatkii"
+    sv "shut up hatkii"
     show h sad
-    sv "yeah shut up"
     m "Hmm, I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in 2018..."
-    m "well actually come to think of it, its not that hard"
+    m "Well actually, come to think of it, I have the perfect way..."
     $k = DblKlondike(1)
     call pre_start_game from _call_pre_start_game # :^), also i might make the start of the game more abrupt for humour
 
@@ -156,6 +162,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     show s sansvoy at left:
         zoom 2
     show m kukuru at right
+    with fade
     sv "{cps=20}holy shit i beat that fucking solitaire meme{/cps}"
     sv "{cps=20}Now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
     sv "{cps=20}All you motherfuckers are gonna play some fucking {p}{size=140}{b}{i}SNAKE{/i}{/b}{/size}{/cps}"
@@ -169,6 +176,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     show s normal at truecenter:
         zoom 2.0
     show m kukuru at right
+    with fade
     s "Uuuughh...{w=1} My everything hurts."
     s "Dude, what the hell happened?"
     m "..."
@@ -184,7 +192,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     s "Stop spouting nonsense."
     m "i assure you none of this is nonsense, and there is also a high chance that the real you is streaming this right now"
     s "Are you kidding me?  What the fuck are you talking about?"
-    show h normal at left
+    show h normal at left with dissolve
     h "Rumors about petty issues, misinterpretations, slander..."
     m "All of this junk data preserved in an unfiltered state, growing at an alarming rate."
     h "It will only slow down social progress, reduce the rate of evolution."
@@ -198,6 +206,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     scene black with Fade(1.0, 0.0, 0.0)
     show m kukuru at truecenter
     show h normal at right
+    with dissolve
     m "You exercise your right to \"freedom\" and this is the result.{p}All rhetoric to avoid conflict and protect each other from hurt."
     m "The untested truths spun by different interests continue to churn and accumulate in the sandbox of political correctness and value systems."
     h "Everyone withdraws into their own small gated community, afraid of a larger forum.{p}They stay inside their little ponds, leaking whatever \"truth\" suits them into the growing cesspool of society at large."

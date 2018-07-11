@@ -21,10 +21,11 @@ label start:
     python:
         if not persistent.set_volumes:
             persistent.set_volumes = True
-            _preferences.volumes['music'] *= .70 
+            _preferences.volumes['music'] *= .70
 
-    scene bg room with fade #THIS IS A PLACEHOLDER IMAGE PLS FIX
+    scene bg room
     show s worried at truecenter
+    with fade
 
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
@@ -34,7 +35,7 @@ label start:
     "We do as much programming as we do Brazilian Lap Dancing.{p}Which, to clarify, is none."
     "Let us join Stovoy now, as he begins his stream on Twitch."
 
-    scene bg twitch with dissolve
+    scene bg twitch with fade
 
     #Stovoy speaking to twitch chat
     s "H-hey guys! Can you hear me? I'm refactoring Evades.io to get the engine ready to accept new ma-"
@@ -46,12 +47,11 @@ label start:
     s   "Well, what do you wanna know..."
     sumer "everything"
     s   "{i}What's with this kid...?{/i}"
-    hide sumer gay
+    show sumer at right with move
 
     show m kukuru at truecenter
     m   "{image=POGGERS.png} is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
     m   "i have fucking x-ray vision and i can see into your case, nobody retroactively grab any screenshots of when we actually saw him open his pc on stream also fuck this vn"
-    hide m kukuru
 
     s   "Well, not like my regulars are anymore sane than this new guy..."
     menu:
@@ -73,7 +73,6 @@ label after_menu:
     s   "Alright, well, just... {w}Sit and watch me code... {w}I guess..."
     "Stovoy valiantly attempts to make progress on Evades.io, but as always, it was never meant to be..."
 
-    show m kukuru at truecenter
     m   "hey check out this worthless youtube video"
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
@@ -81,15 +80,15 @@ label after_menu:
         vids = ["0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
         open(url + renpy.random.choice(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time, wasn't it? :^)"
-    hide m kukuru
 
-    s   "Why the actual fuck am I putting up with this."
+    s   "Wow Maavrik, thanks! That video was pretty funny!"
+    s   "{i}Why the actual fuck am I putting up with this.{/i}"
     "Countless hours go on, with little work on Evades.io and plenty of worthless YouTube videos, and a plethora of other distractions."
     "Finally, Stovoy was feeling his fatigue that night, and began to wind down." #should we add more useless banter before the story branches?
-    s   "Even after Evades.io development is finished, I can only make a copy of Snake using so many frameworks, what am I even gonna do..."
+    s   "{i}Even after Evades.io development is finished, I can only make a copy of Snake using so many frameworks, what am I even gonna do...{/i}"
 
     menu:
-        s "I've got to figure something out..."
+        s "{i}I've got to figure something out...{/i}"
 
         "Abide by the punishment that has been placed upon me":
             s "Ugh... Time to make Snake in LOLCODE..."

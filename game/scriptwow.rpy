@@ -1,7 +1,8 @@
 label hatstream:
     "Early the next day..."
-    scene bg room hat with fade
+    scene bg room hat
     show h happy at truecenter
+    with fade
     h "gee i sure am gay"
     h "you know i cant stop thinking about that one npc that salutes you back in vanilla wow."
     h "fuck it i just feel like playing vanilla wow now."
@@ -10,11 +11,11 @@ label hatstream:
 
     scene bg wow hat
     play music "wowmusic.ogg" #ashenvale or some shit
-    with fade
     show h happy at right
+    with fade
     h "wow i sure am a good wow streamer"
     "Stovoy enters Hatkii's Twitch chat."
-    show s normal at left
+    show s normal at left with dissolve
     s "Jesus Christ what the hell is this.{w} Why is the stream in 2 FPS, this isn't Ocarina of Time on N64."
     h "oh hi stovoy this is my wow stream! check out vanilla wow! isn't it so cool???"
     s "Why are you even playing on a private server, Blizzard is releasing WoW Classic soon."
@@ -58,6 +59,9 @@ label hatqbt:
     "And so, Stovoy and Maavrik pranked Hatkii for a good hour, which included hopping onto voice chat with him, and making fun of him while watching him struggle to operate qBitTorrent."
     m "we should've told him to use deluge :^)"
     s "And you call me cruel?"
+    show black with fade
+    "Later on..."
+    hide black with fade
     m kukukinu flip "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\\Users\\Public\\Documents"
     h sad "WHAT? WHAT AM I DOING WRONG?"
     "Hatkii cancels the extraction."
@@ -66,16 +70,17 @@ label hatqbt:
     h angry "well fuck you maavrik i'm going to start installing again now"
     h "wait it has to re-extract?"
     m "{image=omegalul.png} pranked"
-    h "fucking maavrikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+    h "fucking maavrikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
     scene black
     stop music fadeout 5
     with fade
 
 label wowstream:
     "Finally, after Hatkii spent close to 2 hours installing, while Stovoy spent closer to 15 minutes, Stovoy began streaming WoW."
-    scene bg wow with fade
+    scene bg wow
     play music "wowmusic2.ogg" #dun morogh idk
     show h happy at left
+    with fade
     s "Damn, vanilla WoW sure is nicer looking than I remember."
     h "yeah, isn't it cool?"
     s "Yeah, sure Hatkii..."
@@ -102,7 +107,7 @@ label wowstream:
     s "shut up hatkii"
     scene black with fade
     "The trio get into position..."
-    scene bg wow ss
+    scene bg wow ss with fade
     s "Okay Bunny, get into position, and face the same direction as us."
     "{i}Bunny moves around indiscriminately.{/i}"
     s "Why isn't Bunny talking?"
@@ -127,7 +132,7 @@ label wowstream:
     h "that's going to take months!"
     s "Guess it'll be a segmented speedrun. Lol."
     h "this is a stupid idea"
-    m "shut up hatkii"
+    p "shut up hatkii"
 
 label wowending:
     scene black with fade
@@ -160,17 +165,17 @@ label wowending:
     h "You fools, you have tipped me over the edge.{p}Now, it is time for me to kill Stovoy."
     scene bg wow ded with dissolve
     s "What the shit Hatkii?"
-    show h evil at left
+    show h evil at left with dissolve
     h "Bunny is next."
     s "fuck you hatkii."
     stop music
     h evilangry "WHAT DID YOU JUST SAY?"
 
-    show m kukuru at truecenter
+    show m kukuru at truecenter with dissolve
     m "lamo u got roasted br0"
     h "Maavrik.  I swear, I will kill you."
     m "lol try it kiddo you're like 6 years old"
-    show p bripo at right
+    show p bripo at right with dissolve
     p "lmao hatkii why are you such an angry little bitch lol"
     h "Polsaar.  You'll be next."
     p "what are you talking about you'll have to kill maav first lol {p}maav is invincible :3"
@@ -186,8 +191,9 @@ label wowending:
     m "what"
     p "are you fuckin dum"
     h evilangry "I'm going to obliterate you, player.  {w}The rules of this encounter are simple."
-    scene black with fade
+    scene black
     show h evilangry at truecenter
+    with fade
     play music "<to 150.033>rps.ogg"
     h "First to 3 wins, wins the set.{p}Whoever loses this set, is vanquished forever.\n{size=10}you might want to save now{/size}"
     jump rps_select #scriptrps.rpy
@@ -199,10 +205,10 @@ label rps_winner:
     "You deliver a swift roundhouse kick to Hatkii.  He begins to die."
     play music "sadviolin.mp3"
     h evilsad "What the actual fuck?  All it takes is a simple roundhouse kick to do me in?"
-    show s normal at left
+    show s normal at left with dissolve
     s "Maybe if you weren't such a weakling, this wouldn't have been the case."
     h "urgh... why did maav kill me in this vn..."
-    show m kukuru at right
+    show m kukuru at right with dissolve
     m "because you wouldn't stop talking about it lol"
     m "eventually when something is said enough, you start to believe it yourself"
     h "why would you let yourself be influenced by ME?"
@@ -212,10 +218,11 @@ label rps_winner:
     "Hatkii dies.  {w}Peace is restored."
     stop music fadeout 3
 
-    scene bg room with fade
+    scene bg room
     show s normal at left
     show p bripo at truecenter
     show m kukuru at right
+    with fade
     s "Wow, what a crazy ride with Hatkii!  Sure is a shame he had to die though."
     p "nah fuck that kid he was dum lol"
     m "for once i agree with pols"

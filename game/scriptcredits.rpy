@@ -1,5 +1,5 @@
 init python: #bunny wanted to be credited as "Hakii"
-    credits = ("Writing", "Maavrik"), ("Writing", "MUDA (Summerrocks)"), ("Programming", "Maavrik"), ("Programming", "MUDA (Summerrocks)"), ("Artwork", "Hakii"), ("Music", "Clubhouse Games"), ("Music", "Half-Life 2 - Triage at Dawn"), ("Music", "Moby - Extreme Ways"), ("Music", "Sonic the Hedgehog 3 - Carnival Night Zone Act 1"), ("Music", "World of Warcraft - Ashenvale"), ("Music", "World of Warcraft - Dun Morogh"), ("Sound Effects", "Half-Life 2 (which itself used a generic sound bank)"), ("Sound Effects", "Wilhelm Scream"), ("Everything else", "Google"), ("Everything else", "YouTube")
+    credits = ("Writing", "Maavrik"), ("Writing", "MUDA (Summerrocks)"), ("Programming", "Maavrik"), ("Programming", "MUDA (Summerrocks)"), ("Artwork", "Hakii"), ("Music", "Clubhouse Games"), ("Music", "Gitaroo Man OST - Nuff Respect (feat. NAHKI)"), ("Music", "Half-Life 2 - Triage at Dawn"), ("Music", "Moby - Extreme Ways"), ("Music", "Sonic the Hedgehog 3 - Carnival Night Zone Act 1"), ("Music", "World of Warcraft - Ashenvale"), ("Music", "World of Warcraft - Dun Morogh"), ("Sound Effects", "Half-Life 2 (which itself used a generic sound bank)"), ("Sound Effects", "Wilhelm Scream"), ("Everything else", "Google"), ("Everything else", "YouTube")
     credits_s = "{size=80}Credits\n\n"
     c1 = ''
     for c in credits:
