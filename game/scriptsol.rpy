@@ -56,7 +56,7 @@ init python:
 init:
     image bg table = "#262F"
     image dim = "#0008"
-    image boom = Particles(ExplodeFactory("card/back.png", numParticles=10, explodeTime = 5.0))
+    image boom = Particles(ExplodeFactory("card/back.png", numParticles=10, explodeTime = 10.0))
 
     # Some styles for show text.
     $ style.centered_text.drop_shadow = (2, 2)
