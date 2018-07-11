@@ -104,5 +104,4 @@ label win:
     show dim
     with dissolve
     "good work :^){p}This part of the VN brought to you in part by {a=https://github.com/SusanTheCat/SolitaireProject}this GitHub project.{/a}"
-    "This music brought to you by the best Nintendo DS game ever made, {a=https://en.wikipedia.org/wiki/Clubhouse_Games}Clubhouse Games.{/a}"
     return
