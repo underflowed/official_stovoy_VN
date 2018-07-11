@@ -59,13 +59,13 @@ label start:
 
         "Actually develop Evades.io":
             $tried_dev = True
-            $ mp.officialstovoyvntrieddev = True
+            $ mp.vn1trieddev = True
             $ mp.save()
             s "{i}Well, it never works out, even when I tell myself to do that...{/i}"
 
         "I should talk to these idiots, my sub counts are low":
             $tried_dev = False
-            $ mp.officialstovoyvntrieddev = False
+            $ mp.vn1trieddev = False
             $ mp.save()
             s "{i}Ugh... fine...{/i}"
 

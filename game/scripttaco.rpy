@@ -151,7 +151,7 @@ label trueending:
     sv "shut up hatkii"
     show h sad
     m "Hmm, I have to think of something before he makes everybody play that boring ass game..."
-    m "or even worse, actually make people play Undertale in 2018..."
+    m "or even worse, actually make people play Undertale in [currentyear]..."
     m "Well actually, come to think of it, I have the perfect way..."
     $k = DblKlondike(1)
     call pre_start_game from _call_pre_start_game # :^), also i might make the start of the game more abrupt for humour
@@ -222,7 +222,7 @@ label devjump: #making this so i dont have to play fucking solitaire
 
     scene black with fade
     play music "victory.mp3" noloop
-    $mp.beatofficialstovoyvntrueending = True
+    $mp.vn1trueending = True
     $mp.save()
     "{b}Congratulations, you got the True Ending!{/b}"
     call credits from _call_credits_5

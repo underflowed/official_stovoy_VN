@@ -34,7 +34,7 @@ label hatstream:
     scene black
     stop music fadeout 5
     with fade
-    "But little did poor Hatkii know, that he was in for a world of pain.{p}i guess that means he should worry about it{nw}"
+    "But little did poor Hatkii know, that he was in for a world of pain.{p}(i guess that means he should worry about it)"
 
 label hatqbt:
     scene bg hat qbt #he doesn't have his streams auto-vod so i can't grab any screenshots of him trying to use qbittorrent for the first time, what do we do for this lmao
@@ -62,6 +62,7 @@ label hatqbt:
     show black with fade
     "Later on..."
     hide black with fade
+    s "Finally, he's installing the game.  I can't believe how long this took."
     m kukukinu flip "HATKII WHY THE FUCK ARE YOU INSTALLING THE GAME TO C:\\Users\\Public\\Documents"
     h sad "WHAT? WHAT AM I DOING WRONG?"
     "Hatkii cancels the extraction."
@@ -143,6 +144,7 @@ label wowending:
     h "NOT SO FUCKING FAST" #do not allow transition until recordscratch.mp3 has finished playing, then force transition
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
+    with Fade(0.1, 0.0, 0.5, color="#fff")
     "Hatkii yelled from behind the VN's end screen.{p}He was finally fed up. He had finally had enough."
     show h happy at truecenter
     h "Hello player.  Or should I say Stovoy, since who the fuck else is going to play this."

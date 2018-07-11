@@ -42,7 +42,7 @@ label rpymeme: #selectable by choosing to actually develop Evades.io, leads to G
     #probably needs music, along with the rest of this game
     scene black with fade
     "And with that, Stovoy finished refactoring Evades.io successfully.{p}Stovoy felt the satisfaction of actually completing something he set out to do, and lived life happily ever after."
-    $mp.beatofficialstovoyvngooddevending = True
+    $mp.vn1gooddevending = True
     $mp.save()
     "{b}Good work, you got the Good Developer ending.{/b}"
     call credits from _call_credits_2
