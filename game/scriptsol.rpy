@@ -77,6 +77,7 @@ label solstart:
 label pre_start_game:
     scene bg table
     show dim with dissolve
+    $k = DblKlondike(1)
     #$ k = Klondike(1) #or DblKlondike(1)
 
 label start_game:
@@ -105,3 +106,15 @@ label win:
     with dissolve
     "good work :^){p}This part of the VN brought to you in part by {a=https://github.com/SusanTheCat/SolitaireProject}this GitHub project.{/a}"
     return
+
+label retry:
+    $k.hide()
+    #$k =
+    jump pre_start_game
+    # Potential better fix:
+    # In the event that you want to have more than one card game in your VN, you
+    # might prefer to instead call the shuffle definition on cardgame.rpy,
+    # which is located on line 511.  Additionally, see line 47 of
+    # dbl_klondike.rpy for a Double Klondike shuffle function maybe.
+    #
+    # In any event, summer wants the VN out so enjoy the myraid of bad fixes.
