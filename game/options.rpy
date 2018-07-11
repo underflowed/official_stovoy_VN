@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "0.69_beta"
+define config.version = "1.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -31,9 +31,7 @@ define config.version = "0.69_beta"
 
 define gui.about = _p("""This game is about Stovoy.  He is a programmer.
 
-He programs Evades.io live, on Twitch.  Except, he doesn't really get to program anything.
-
-Join us on this spectacular adventure through numerous perils, the likes of which have never been seen before.
+Stovoy programs Evades.io live, on Twitch, except he doesn't really get to program anything.  Join us on this spectacular adventure through numerous perils, the likes of which have never been seen before.
 
 This game has 7 endings, including fake endings.  You'll have to count them by yourself because Summer wanted the game out ASAP so Maavrik don't have time to learn how to make an "achieved endings" screen. :^)
 """)
@@ -89,12 +87,12 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = fade
 
 
 ## A variable to set the transition used when the game starts does not exist.
