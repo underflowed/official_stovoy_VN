@@ -72,6 +72,7 @@ label getstonedending:
         s "{i}chomp{/i}"
         scene black with fade
         "{b}Congratulations, you got the Stoned Devolper Ending!{/b}" #Jesus Christ this ending sucks
+        call credits
         return
 
 label endoftacosaga:
@@ -106,6 +107,7 @@ label endoftacosaga:
     scene black with None
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
+    with Pause(4)
     "His new motherboard began to release an engulfing darkness from the CPU socket."
     "The entire room was consumed."
     "Stovoy began to feel... something."
@@ -161,7 +163,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     scene black with None
     stop music
     play sound "gunshot.ogg"
-    with Fade(0, 0, 5) #effectively pauses the game without me having to looking up how to pause the game in a more elegant manner
+    with Pause(5)
 
     scene bg room
     show s normal at truecenter:
@@ -214,4 +216,5 @@ label devjump: #making this so i dont have to play fucking solitaire
     $mp.beatofficialstovoyvntrueending = True
     $mp.save()
     "{b}Congratulations, you got the True Ending!{/b}"
+    call credits
     return

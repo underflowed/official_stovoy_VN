@@ -55,10 +55,14 @@ label start:
 
         "Actually develop Evades.io":
             $tried_dev = True
+            $ mp.officialstovoyvntrieddev = True
+            $ mp.save()
             s "{i}Well, it never works out, even when I tell myself to do that...{/i}"
 
         "I should talk to these idiots, my sub counts are low":
             $tried_dev = False
+            $ mp.officialstovoyvntrieddev = False
+            $ mp.save()
             s "{i}Ugh... fine...{/i}"
 
 label after_menu:
@@ -91,9 +95,9 @@ label after_menu:
             s "Alright guys, today was a good stream, pretty long, but I'm gonna head off for today.{p}Hope to see you next stream!"
             scene black with fade
             if tried_dev is True:
-                "Stovoy enjoyed a good sleep that night, knowing that despite his valiant efforts, he still attempted to develop Evades.io.{p}Inside, he was still a good person."
+                "Stovoy enjoyed a good sleep that night, knowing that despite his valiant efforts, he still attempted to develop Evades.io.{p}Inside, he knew was still a good person."
             else:
-                "Stovoy was restless that night, as he couldn't shake the fact that he was slowly becoming a sellout Twitch shill.{p}Inside, he knew he was a terrible person."
+                "Stovoy was restless that night, as he couldn't shake the fact that he was slowly becoming a sellout Twitch shill.{p}Inside, he knew he was becoming a terrible person."
             scene black with fade
             jump hatstream #scriptwow.rpy
 
@@ -109,4 +113,5 @@ label after_menu:
 label bad_end:
     scene black with fade
     "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/swaggy/LOLCODE-Snake}sick repo out of it!{/a}"
+    call credits
     return

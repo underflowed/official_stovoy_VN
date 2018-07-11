@@ -223,6 +223,7 @@ label rps_winner:
     s "Well, fuck you Polsaar, I'm going to go stream now."
     scene black with fade
     "{b}Congratulations, you got the \"Hatkiiller\" ending!{/b}"
+    call credits
     return
 
 label rps_gameover:
@@ -232,6 +233,7 @@ label rps_gameover:
     scene black with fade
     h "Don't worry about the semantics on how I am strangling a human through a VN.  You are dead now."
     "{b}You died to Hatkii's hand in [currentyear].  You got the Worst Ending.\n{/b}{size=10}you should reload that save you took before this{/size}"
+    call credits
     return
 
 
