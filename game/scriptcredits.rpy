@@ -13,7 +13,7 @@ label credits: #https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
     $ credits_speed = 40
     play music "extremeways.mp3"
     image cred = Text(credits_s, text_align=0.5)
-    image theend = Text("{size=80}The End", text_align = 0.5)
+    image theend = Text("{size=80}Thanks for Playing!", text_align = 0.5)
     image forever = Text("{size=40}Stovoy will return...", text_align = 0.5)
     scene black with dissolve
     show theend:
