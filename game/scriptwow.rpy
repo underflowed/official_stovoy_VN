@@ -135,7 +135,7 @@ label wowending:
     h "NOT SO FUCKING FAST{nw}"
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
-    "Hatkii yelled from behind the VN's end screen.{p}He was finally fed up. He has had enough."
+    "Hatkii yelled from behind the VN's end screen.{p}He was finally fed up. He had finally had enough."
     show h happy at truecenter
     h "Hello player.  Or should I say Stovoy, since who the fuck else is going to play this."
     h "I think it's about time I do what I said I would do in your chat."
@@ -207,8 +207,8 @@ label rps_winner:
     m "mostly by choice lol"
     h "fuck..."
     hide h with dissolve
-    stop music fadeout 3
     "Hatkii dies.  {w}Peace is restored."
+    stop music fadeout 3
 
     scene bg room with fade
     show s normal at left
@@ -219,7 +219,7 @@ label rps_winner:
     m "for once i agree with pols"
     s "Well, shit...  Guess I better get back to streaming..."
     p "i don't even watch your stream, all i do is stop by and say i hate maavrik"
-    m "he does :("
+    m "it's true :("
     s "Well, fuck you Polsaar, I'm going to go stream now."
     scene black with fade
     "{b}Congratulations, you got the \"Hatkiiller\" ending!{/b}"
