@@ -74,7 +74,7 @@ label after_menu:
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
         url = "https://www.youtube.com/watch?v=" #get beginning of YouTube URL
-        vids = ["Vlnh0KLVJJ0", "0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
+        vids = ["0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
         open(url + renpy.random.choice(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time, wasn't it? :^)"
     hide m kukuru
