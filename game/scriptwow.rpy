@@ -120,13 +120,13 @@ label wowstream:
     with Fade(0.1, 0.0, 0.5, color="#fff")
     "{i}The screenshot is taken by Stovoy.{/i}"
     s "There we go, a perfect memory of our time in WoW!"
-    show h normal at left
+    show h normal at left with dissolve
     h "this feels stupid to do"
     show p bripo at truecenter
     p "shut up hatkii"
     s "Whoa Polsaar, when did you get here?"
     p "i asked maavrik to be in the vn"
-    show m kukuru at right
+    show m kukuru at right with dissolve
     m "yeah he did lol"
     s "Whatever...  Now, to begin our speedrun to Lv60."
     h "that's going to take months!"
@@ -139,7 +139,8 @@ label wowending:
     stop music fadeout 5
     "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
     call fakecredits from _call_fakecredits #:^)
-    h "NOT SO FUCKING FAST{nw}"
+    play music "recordscratch.mp3" noloop
+    h "NOT SO FUCKING FAST" #do not allow transition until recordscratch.mp3 has finished playing, then force transition
     play sound "thunder.ogg"
     play music "rainloop.mp3" fadein 8
     "Hatkii yelled from behind the VN's end screen.{p}He was finally fed up. He had finally had enough."
@@ -147,7 +148,8 @@ label wowending:
     h "Hello player.  Or should I say Stovoy, since who the fuck else is going to play this."
     h "I think it's about time I do what I said I would do in your chat."
     h "Take over this VN, and kill everyone."
-    h evil "Soon, {b}nobody will tell me to shut up.{/b}"
+    show h evil as noth at truecenter with dissolve
+    h "Soon, {b}nobody will tell me to shut up.{/b}"
     scene black
     play music "thunder.ogg"
     with None
