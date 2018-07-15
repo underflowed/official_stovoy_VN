@@ -30,8 +30,8 @@ label start:
     # Narrator introducing Stovoy after work
     "After coming home from his overly well paying Silicon Valley tech start-up job, Stovoy began streaming."
     "All 10 of his loyal followers logged onto Twitch, to watch him attempt to develop his pet project, Evades.io."
-    "Day in and day out (Except for Mondays and Wednesdays), he would force himself into having to come back to these stupid idiots, thut halting any notion of the word \"productivity\"."
-    "Stovoy himself and his 10 follows know that whenever he streams, any sense of productivity is futile."
+    "Day in and day out (Except for Mondays and Wednesdays), he would force himself into having to come back to these stupid idiots, thus halting any notion of the word \"productivity\"."
+    "Stovoy himself and his 10 followers know that whenever he streams, any sense of productivity is futile."
     "We do as much programming as we do Brazilian Lap Dancing.{p}Which, to clarify, is none."
     "Let us join Stovoy now, as he begins his stream on Twitch."
 
@@ -53,7 +53,7 @@ label start:
     m   "{image=POGGERS.png} is that a fucking Hyper 212 Evo why the fuck is that cooler the most popular shit still this is ridiculous"
     m   "i have fucking x-ray vision and i can see into your case, nobody retroactively grab any screenshots of when we actually saw him open his pc on stream also fuck this vn"
 
-    s   "Well, not like my regulars are anymore sane than this new guy..."
+    s   "{i}Well, not like my regulars are anymore sane than this new guy...{/i}"
     menu:
         s "{i}What should I do?{/i}"
 

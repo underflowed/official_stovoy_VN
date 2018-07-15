@@ -100,7 +100,7 @@ label endoftacosaga:
     s "I'm kinda stressed now however... Let's play some {nw}"
     play music "lofi.mp3"
     s "I'm kinda stressed now however... Let's play some {fast}{i}l o  -  f i{/i}"
-    "Stovoy now spends a solid hour of his time replacing a motherboard.{p}Seriously though, 10 fucking minutes on a CPU power cable, like, my dude..."
+    "Stovoy now spends a solid two hours of his time replacing a motherboard.{p}Seriously though, 10 fucking minutes on a CPU power cable, like, my dude..."
     "{i}Stovoy pulls out a cable from the 90's{/i}"
     t "what the actual fuck"
     s "What?"
