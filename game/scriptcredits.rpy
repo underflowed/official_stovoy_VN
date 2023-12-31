@@ -4,7 +4,7 @@ init python: #bunny wanted to be credited as "Hakii"
     ("Writing", "MUDA (Summerrocks)"),
     ("Programming", "Maavrik"),
     ("Programming", "MUDA (Summerrocks)"),
-    ("Artwork", "Hakii"),
+    ("Artwork", "Hakii"), # this was bunny not hatkii, not a typo
     ("Music", "Clubhouse Games"),
     ("Music", "Gitaroo Man OST - Nuff Respect (feat. NAHKI)"),
     ("Music", "Half-Life 2 - Triage at Dawn"),
@@ -29,10 +29,10 @@ init python: #bunny wanted to be credited as "Hakii"
 
 label credits: #https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
     $ credits_speed = 40
-    play music "extremeways.mp3"
+    play music "images/extremeways.mp3"
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}Thanks for Playing!", text_align = 0.5)
-    image forever = Text("{size=40}Stovoy will return...", text_align = 0.5)
+    image forever = Text("{size=40}Stovoy will (probably not) return...", text_align = 0.5)
     scene black with dissolve
     show theend:
         yanchor 0.5 ypos 0.5

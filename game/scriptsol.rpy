@@ -88,8 +88,8 @@ label start_game:
 label quick_continue:
     hide dim with dissolve
     python:
-        if renpy.music.get_playing() != u'solitaire.ogg':
-            renpy.music.play("solitaire.ogg")
+        if renpy.music.get_playing() != u'images/solitaire.ogg':
+            renpy.music.play("images/solitaire.ogg")
     while True:
         python:
             ui.textbutton("Retry", ui.jumps("pre_start_game"), xalign=.02, yalign=.98)

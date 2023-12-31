@@ -4,7 +4,7 @@ init python:
         if not interact:
             return
         if event == "show":
-            renpy.music.play("sansvoice.ogg", channel="sound", loop=True, tight=True, if_changed=True)
+            renpy.music.play("images/sansvoice.ogg", channel="sound", loop=True, tight=True, if_changed=True)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop()
 
@@ -61,7 +61,7 @@ label getstonedending:
             zoom 2.0
         show m stoned at right
         with fade
-        play music "nuffrespect.mp3"
+        play music "images/nuffrespect.mp3"
         #I'll get on photoshop and edit up some pictures later tonight, im currently on a train to another city :^)
         s "Duuuuude... {w=1}what if I programmed snake with like... {w=1}Brainfuck... {w=1}right now..."
         m "You're a little too obssessed with making Snake dude this is getting out of hand"
@@ -98,7 +98,7 @@ label endoftacosaga:
     t "shit you right"
     hide ramfan
     s "I'm kinda stressed now however... Let's play some {nw}"
-    play music "lofi.mp3"
+    play music "images/lofi.mp3"
     s "I'm kinda stressed now however... Let's play some {fast}{i}l o  -  f i{/i}"
     "Stovoy now spends a solid two hours of his time replacing a motherboard.{p}Seriously though, 10 fucking minutes on a CPU power cable, like, my dude..."
     "{i}Stovoy pulls out a cable from the 90's{/i}"
@@ -112,8 +112,8 @@ label endoftacosaga:
     s "{b}FUCK{/b}"
     s "... Okay, {w}I think everything's coo-  {nw}"
     scene black with None
-    play sound "thunder.ogg"
-    play music "rainloop.mp3" fadein 8
+    play sound "images/thunder.ogg"
+    play music "images/rainloop.mp3" fadein 8
     with Pause(4)
     "His new motherboard began to release an engulfing darkness from the CPU socket."
     "The entire room was consumed."
@@ -133,7 +133,7 @@ label endoftacosaga:
     jump trueending
 
 label trueending:
-    play music "megalovania.mp3" #this don't loop properly lol
+    play music "images/megalovania.mp3" #this don't loop properly lol
     show s sansvoy at truecenter:
         zoom 2.0 #adding this zoom effect because the image is too small
     with Fade(0.0, 0.0, 15.0)
@@ -153,22 +153,49 @@ label trueending:
     m "Hmm, I have to think of something before he makes everybody play that boring ass game..."
     m "or even worse, actually make people play Undertale in [currentyear]..."
     m "Well actually, come to think of it, I have the perfect way..."
+    menu optional_name:
+        m "But you might not be gamer enough to handle it.  Think you can handle Double Klondike Solitaire?"
+        "no im bad at solitaire :(":
+            $skippedSolitaire = True
+            m "aww that's okay we won't belittle you for that at all :)"
+            jump devjump # 5 years later putting this to good use
+        "ya im a solitaire GOD":
+            $skippedSolitaire = False
+            pass
     call pre_start_game from _call_pre_start_game # :^), also i might make the start of the game more abrupt for humour
 
 label devjump: #making this so i dont have to play fucking solitaire
     scene black with fade
-    play music "<from 112.452 loop 0>megalovania.mp3"
+    play music "<from 112.452 loop 0>images/megalovania.mp3"
     show s sansvoy at left:
         zoom 2
     show m kukuru at right
     with fade
     sv "{cps=20}holy shit i beat that fucking solitaire meme{/cps}"
+    if skippedSolitaire is True:
+        show m kukukinu at right
+        m "actually YOU DID NOT{p}HOLY SHIT"
+        m "6 YEARS LATER AND I'M PATCHING THIS DUMPSTER FIRE TO HAVE A BUILT-IN SOLITAIRE SKIP"
+        m "YOU HAVE HAD 6 YEARS TO LEARN SOLITAIRE AND YOU{p}{size=140}{b}{i}DIDN'T{/i}{/b}{/size}"
+        m "YOU THINK I ACTUALLY REMEMBER ANY PYTHON AT ALL? I USE POWERSHELL AT WORK I'M A WINDOWS SYSADMIN GOD DAMN IT"
+        m "I TAUGHT MY DATACENTER SYSADMIN COUNTERPART PYTHON AND POWERSHELL THEN FORGOT PYTHON SINCE I NEVER USED IT"
+        m "THIS TOOK ME HOURS TO IMPLEMENT I HOPE YOU'RE HAPPY"
+        m "AND THEN I CAME ACROSS ALL THE BUGS WITH THE JUMP TO THE NEWER REN'PY VERSION"
+        m "THANKS FOR REMINDING ME WHY I'M NOT A GAME DEV OR A REGULAR DEV"
+        m "{fast}{nw}muda i hope school went well we should talk more :)"
+        show sumer gay at left
+        sumer "maav shut up sysadmins are dumb"
+        m "YEAH JOKES ON YOU I HAVE TO SYSADMIN FOR DEVS NOW AND{p}{b}HOOOOOOOOOOOOOOOOOOOOOLY SHIT{/b} SOME OF THE SHIT THEY DO"
+        sv "{cps=20}man whatever can we get back to the game you said you wouldn't belittle the player"
+        m "ok fine"
+        show m kukuru
+        hide sumer gay
     sv "{cps=20}Now, for real this time, {p}{b}NOTHING CAN STOP ME ANYMORE{/b}{/cps}"
     sv "{cps=20}All you motherfuckers are gonna play some fucking {p}{size=140}{b}{i}SNAKE{/i}{/b}{/size}{/cps}"
     m kukugun "bye bye"
     scene black with None
     stop music
-    play sound "gunshot.ogg"
+    play sound "images/gunshot.ogg"
     with Pause(5)
 
     scene bg room
@@ -184,7 +211,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     m "yeah."
     s "Uhh, well... {p}I guess I'll go back to streaming."
     m "Well actually, there's a strong possibility that the person currently playing this is the real you"
-    play music "<to 126.124>arsenalsguts.ogg"
+    play music "<to 126.124>images/arsenalsguts.ogg"
     m "we are just a simulation, stovoy"
     s "What the fuck are you talking about."
     m "we are not the real representations of ourselves, rather we are purely data that is supposed to represent us in a fictional sense"
@@ -201,7 +228,7 @@ label devjump: #making this so i dont have to play fucking solitaire
     h "But beat out the competition!"
     m "\"You're special.\"{p}\"Believe in yourself and you will succeed.\""
     h "But it's obvious from the start that only a few can succeed..."
-    play music "<from 126.200 to 281.995>arsenalsguts.ogg"
+    play music "<from 126.200 to 281.995>images/arsenalsguts.ogg"
     scene black with Fade(1.0, 0.0, 0.0)
     show m kukuru at truecenter
     show h normal at right
@@ -217,10 +244,22 @@ label devjump: #making this so i dont have to play fucking solitaire
     show s normal at truecenter:
         zoom 2.0
     s "Okay you know what just end this fucking game"
+    if skippedSolitaire is True:
+        show m kukuru at truecenter
+        m "NO YOU SKIPPED SOLITAIRE LOL"
+        e "LOL"
+        t "LOL"
+        show sumer gay at truecenter
+        sumer "LOL"
+        show h happy at truecenter
+        h "LOL"
+        show p bripo at truecenter
+        p "LOL"
+
 
 
     scene black with fade
-    play music "victory.mp3" noloop
+    play music "images/victory.mp3" noloop
     $mp.vn1trueending = True
     $mp.save()
     "{b}Congratulations, you got the True Ending!{/b}"

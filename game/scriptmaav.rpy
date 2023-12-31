@@ -1,33 +1,33 @@
-#define rpypos = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5) #these aren't needed anymore but i might use the positions in the future
+#define logopos = Position(xpos=0.15, xanchor=0.0, ypos=0.5, yanchor=0.5) #these aren't needed anymore but i might use the positions in the future
 #define mpos = Position(xpos=0.95, xanchor=1.0, ypos=0.5, yanchor=0.5) #these aren't needed anymore but i might use the positions in the future
-define rpy = Character("Ren'Py Logo", color="#FF7F7F")
+define logo = Character("Ren'Py Logo", color="#FF7F7F")
 
-label rpymeme: #selectable by choosing to actually develop Evades.io, leads to Good Developer ending
+label logomeme: #selectable by choosing to actually develop Evades.io, leads to Good Developer ending
     scene bg room
-    show rpy at left
+    show image("rpy.png") as logo at left
     with fade
-    rpy "What the hell is this!?"
+    logo "What the hell is this!?"
     show m kukuru at right with dissolve
     m   "a visual novel? :^)"
-    rpy "You call this a visual novel?  This is an abomination of the fantastic Ren'Py engine!"
+    logo "You call this a visual novel?  This is an abomination of the fantastic Ren'Py engine!"
     m   "is that an issue? :^)"
-    rpy "YES"
+    logo "YES"
     m   "Well...  We can't have that now, can we..."
-    rpy "..."
+    logo "..."
     m   "..."
     #show m kukugun at Position(xpos=0.25, xanchor=0.0, ypos=0.5, yanchor=0.5)
     show m kukugun at truecenter
     m   "u die now"
-    show image(im.Grayscale("rpy.png")) as rpy
-    rpy "shit"
+    show image(im.Grayscale("rpy.png")) as logo
+    logo "shit"
 
-    play music "hl2_song23_suitsong3.mp3" noloop
+    play music "images/hl2_song23_suitsong3.mp3" noloop
     scene black with Fade(8.5, 0.0, 0.0)
 
-    play sound "gunshot.ogg"
+    play sound "images/gunshot.ogg"
     "Maavrik mercilessly murders that stupid Ren'Py logo before she could possibly shittalk this VN any longer.{p}(that was a joke i think the ren'py logo is very cute)"
-    play sound "Wilhelm_Scream.ogg"
-    rpy "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    play sound "images/Wilhelm_Scream.ogg"
+    logo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
     stop music
     stop sound

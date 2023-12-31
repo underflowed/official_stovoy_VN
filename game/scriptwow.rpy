@@ -10,7 +10,7 @@ label hatstream:
     h "woah... i should stream this..."
 
     scene bg wow hat
-    play music "wowmusic.ogg" #ashenvale or some shit
+    play music "images/wowmusic.ogg" #ashenvale or some shit
     show h happy at right
     with fade
     h "wow i sure am a good wow streamer"
@@ -40,7 +40,7 @@ label hatqbt:
     scene bg hat qbt #he doesn't have his streams auto-vod so i can't grab any screenshots of him trying to use qbittorrent for the first time, what do we do for this lmao
     show h normal at right
     show s think at left
-    play music "<to 135>carnivalnightact1.ogg"
+    play music "<to 135>images/carnivalnightact1.ogg"
     with fade
     s "Alright Hatkii, you gotta torrent the client for this private server."
     h "ughh, this sounds like a lot of effort"
@@ -79,7 +79,7 @@ label hatqbt:
 label wowstream:
     "Finally, after Hatkii spent close to 2 hours installing, while Stovoy spent closer to 15 minutes, Stovoy began streaming WoW."
     scene bg wow
-    play music "wowmusic2.ogg" #dun morogh idk
+    play music "images/wowmusic2.ogg" #dun morogh idk
     show h happy at left
     with fade
     s "Damn, vanilla WoW sure is nicer looking than I remember."
@@ -140,10 +140,10 @@ label wowending:
     stop music fadeout 5
     "{b}Congratulations, you got the Addicted to WoW ending!{/b}"
     call fakecredits from _call_fakecredits #:^)
-    play music "recordscratch.mp3" noloop
+    play music "images/recordscratch.mp3" noloop
     h "NOT SO FUCKING FAST" #do not allow transition until recordscratch.mp3 has finished playing, then force transition
-    play sound "thunder.ogg"
-    play music "rainloop.mp3" fadein 8
+    play sound "images/thunder.ogg"
+    play music "images/rainloop.mp3" fadein 8
     with Fade(0.1, 0.0, 0.5, color="#fff")
     "Hatkii yelled from behind the VN's end screen.{p}He was finally fed up. He had finally had enough."
     show h happy at truecenter
@@ -153,12 +153,12 @@ label wowending:
     show h evil as noth at truecenter with dissolve
     h "Soon, {b}nobody will tell me to shut up.{/b}"
     scene black
-    play music "thunder.ogg"
+    play music "images/thunder.ogg"
     with None
     scene black with Fade(0, 0, 7)
 
     scene bg wow
-    play music "wowmusic2.ogg"
+    play music "images/wowmusic2.ogg"
     show h evil at left
     show p bripo at truecenter
     show m kukuru at right
@@ -198,7 +198,7 @@ label wowending:
     scene black
     show h evilangry at truecenter
     with fade
-    play music "<to 150.033>rps.ogg"
+    play music "<to 150.033>images/rps.ogg"
     h "First to 3 wins, wins the set.{p}Whoever loses this set, is vanquished forever.\n{size=10}you might want to save now{/size}"
     jump rps_select #scriptrps.rpy
 
@@ -207,7 +207,7 @@ label rps_winner:
     stop music fadeout 5
     show h at shake
     "You deliver a swift roundhouse kick to Hatkii.  He begins to die."
-    play music "sadviolin.mp3"
+    play music "images/sadviolin.mp3"
     h evilsad "What the actual fuck?  All it takes is a simple roundhouse kick to do me in?"
     show s normal at left with dissolve
     s "Maybe if you weren't such a weakling, this wouldn't have been the case."
@@ -250,7 +250,7 @@ label rps_gameover:
     return
 
 label fakecredits:
-    play music "extremeways.mp3"
+    play music "images/extremeways.mp3"
     show theend:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5

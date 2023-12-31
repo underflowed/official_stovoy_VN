@@ -1,6 +1,6 @@
 # Declare characters
 define s = Character("Stovoy", color="#1E90FF", image="s")
-define e = Character("Evades.io") #is this character necessary
+define e = Character("Evades.io") #is this character necessary (as of dec 31 2023, yes)
 define t = Character("Twitch Chat", color="#47d1d1")
 define sumer = Character("Summerrocks", color="#EAB8AC", image="sumer")
 define m = Character("Maavrik", color="#FF69B4", image="m")
@@ -77,7 +77,7 @@ label after_menu:
     python: #this should be replaced with something better, probably download the videos and store locally
         from webbrowser import open
         url = "https://www.youtube.com/watch?v=" #get beginning of YouTube URL
-        vids = ["0J4SCX-Beq4", "i9bkKw32dGw", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
+        vids = ["-5lzIZ0b2F8", "3Mb9iXrw8vs", "faU-lqGWgiM", "FwHmgFgm_fc"] #array of video IDs
         open(url + renpy.random.choice(vids), new=1, autoraise=True) #append random choice from vids array onto URL and open in new window (hopefully) and bring window to focus
     m   "that was a worthwhile use of your time, wasn't it? :^)"
 
@@ -111,10 +111,10 @@ label after_menu:
             jump taco_truck #scripttaco.rpy
 
         "Derail this fucking game so I can refactor Evades.io" if tried_dev is True:
-            jump rpymeme #scriptmaav.rpy
+            jump logomeme #scriptmaav.rpy
 
 label bad_end:
     scene black with fade
-    "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/swaggy/LOLCODE-Snake}sick repo out of it!{/a}"
+    "{b}You suck.  You got the Bad Ending.{/b}{p}But at least you got a {a=https://github.com/Stovoy/LOLCODE-Snake}sick repo out of it!{/a}"
     call credits from _call_credits_3
     return
